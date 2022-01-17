@@ -17,6 +17,8 @@ import net.mcreator.testmod.procedures.Rigselect3Procedure;
 import net.mcreator.testmod.procedures.Rigselect2Procedure;
 import net.mcreator.testmod.procedures.Rigselect1Procedure;
 import net.mcreator.testmod.procedures.Rigselect0Procedure;
+import net.mcreator.testmod.network.RigGuiButtonMessage;
+import net.mcreator.testmod.TestModMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -33,7 +35,7 @@ public class RigGuiScreen extends AbstractContainerScreen<RigGuiMenu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 393;
+		this.imageWidth = 250;
 		this.imageHeight = 200;
 	}
 
@@ -55,23 +57,23 @@ public class RigGuiScreen extends AbstractContainerScreen<RigGuiMenu> {
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		if (Rigselect0Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/garrow0.png"));
-			this.blit(ms, this.leftPos + 322, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 60, 0, 0, 16, 16, 16, 16);
 		}
 		if (Rigselect1Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/garrow1.png"));
-			this.blit(ms, this.leftPos + 322, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 87, 0, 0, 16, 16, 16, 16);
 		}
 		if (Rigselect2Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/garrow2.png"));
-			this.blit(ms, this.leftPos + 322, this.topPos + 87, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 114, 0, 0, 16, 16, 16, 16);
 		}
 		if (Rigselect3Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/garrow3.png"));
-			this.blit(ms, this.leftPos + 322, this.topPos + 114, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 141, 0, 0, 16, 16, 16, 16);
 		}
 		if (Rigselect4Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/garrow4.png"));
-			this.blit(ms, this.leftPos + 322, this.topPos + 141, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 168, 0, 0, 16, 16, 16, 16);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -93,10 +95,10 @@ public class RigGuiScreen extends AbstractContainerScreen<RigGuiMenu> {
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Mining Rig", 7, 6, -12829636);
-		this.font.draw(poseStack, "Output", 16, 42, -12829636);
-		this.font.draw(poseStack, "Graphic cards", 205, 33, -12829636);
-		this.font.draw(poseStack, "CPU", 205, 69, -12829636);
-		this.font.draw(poseStack, "Coin selection", 313, 15, -12829636);
+		this.font.draw(poseStack, "Output", 61, 69, -12829636);
+		this.font.draw(poseStack, "Graphic cards", 7, 33, -12829636);
+		this.font.draw(poseStack, "CPU", 7, 69, -12829636);
+		this.font.draw(poseStack, "Coin selection", 169, 42, -12829636);
 	}
 
 	@Override
@@ -109,15 +111,35 @@ public class RigGuiScreen extends AbstractContainerScreen<RigGuiMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 340, this.topPos + 33, 46, 20, new TextComponent("Doge"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 60, 46, 20, new TextComponent("Doge"), e -> {
+			if (true) {
+				TestModMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(0, x, y, z));
+				RigGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 340, this.topPos + 87, 40, 20, new TextComponent("SOL"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 114, 40, 20, new TextComponent("SOL"), e -> {
+			if (true) {
+				TestModMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(1, x, y, z));
+				RigGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 340, this.topPos + 60, 40, 20, new TextComponent("Uni"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 87, 40, 20, new TextComponent("Uni"), e -> {
+			if (true) {
+				TestModMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(2, x, y, z));
+				RigGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 340, this.topPos + 114, 40, 20, new TextComponent("BTC"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 141, 40, 20, new TextComponent("BTC"), e -> {
+			if (true) {
+				TestModMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(3, x, y, z));
+				RigGuiButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 340, this.topPos + 141, 40, 20, new TextComponent("ETH"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 168, 40, 20, new TextComponent("ETH"), e -> {
+			if (true) {
+				TestModMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(4, x, y, z));
+				RigGuiButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
 		}));
 	}
 }

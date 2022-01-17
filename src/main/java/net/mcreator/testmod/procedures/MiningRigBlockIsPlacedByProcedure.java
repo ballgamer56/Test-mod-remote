@@ -22,7 +22,7 @@ public class MiningRigBlockIsPlacedByProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("Difficulty", 200);
+				_blockEntity.getTileData().putDouble("Difficulty", 1200);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

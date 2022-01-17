@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "basicgpu",
     "customModelName": "Normal",
-    "name": "Basic GPU",
+    "name": "Geforce 750Ti",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

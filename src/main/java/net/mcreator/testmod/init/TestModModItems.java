@@ -14,6 +14,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.testmod.item.UniswapcoinItem;
+import net.mcreator.testmod.item.TestPullItem;
 import net.mcreator.testmod.item.SolanacoinItem;
 import net.mcreator.testmod.item.SiliconItem;
 import net.mcreator.testmod.item.PlasticItem;
@@ -68,6 +69,7 @@ public class TestModModItems {
 	public static final Item MILK_PLASTIC = register(TestModModBlocks.MILK_PLASTIC, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item SOLANACOIN = register(new SolanacoinItem());
 	public static final Item UNISWAPCOIN = register(new UniswapcoinItem());
+	public static final Item TEST_PULL = register(new TestPullItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

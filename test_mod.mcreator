@@ -685,6 +685,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "Solanacoin",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solanacoin"
+    },
+    {
+      "name": "Uniswapcoin",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uniswapcoin"
     }
   ],
   "variable_elements": [
@@ -698,8 +714,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.test_mod.crypto_world": "Gold Plated Computer Chip",
       "item.test_mod.ethwallet": "Hardware Wallet (Ethereum)",
+      "item.test_mod.crypto_world": "Gold Plated Computer Chip",
       "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
       "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
       "item.test_mod.coolant_bucket": "Cryptic Water Bucket",
@@ -718,12 +734,14 @@
       "item.test_mod.pick_lv_2": "Crypto Mining Pickaxe Level 2",
       "block.test_mod.crypto_world_portal_frame": "Crypto World Portal Frame",
       "block.test_mod.btc_ore": "Bitcoin Ore",
+      "item.test_mod.uniswapcoin": "Uniswapcoin",
       "fluid.test_mod.coolant": "Cryptic Water",
       "block.test_mod.basiccchipfab": "Chip Assembler",
       "block.test_mod.milk_plastic": "Plastic Maker",
       "item.test_mod.better_chip": "Better Computer Chip (DIP)",
       "block.test_mod.doge_ore": "Doge Ore",
       "block.test_mod.coolant": "Cryptic Water",
+      "item.test_mod.solanacoin": "Solana",
       "block.test_mod.chip_fab": "Chip Fabricator",
       "item.test_mod.fab_chip": "Fabricated Chip Die",
       "item.test_mod.hardware_wallet": "Hardware Wallet (Dogecoin)",

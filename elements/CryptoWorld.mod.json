@@ -21,6 +21,9 @@
     "sleepResult": "DENY",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "CryptoWorldPlayerEntersDimension"
+    },
     "portalFrame": {
       "value": "CUSTOM:CryptoWorldPortalFrame"
     },

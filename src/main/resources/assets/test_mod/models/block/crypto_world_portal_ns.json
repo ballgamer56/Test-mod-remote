@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "test_mod:blocks/coolantstatic",
-    "portal": "test_mod:blocks/coolantstatic"
+    "particle": "test_mod:blocks/coolantstatic2",
+    "portal": "test_mod:blocks/coolantstatic2"
   },
   "elements": [
     {

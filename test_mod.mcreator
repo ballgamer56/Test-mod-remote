@@ -1190,6 +1190,46 @@
           }
         ]
       }
+    },
+    {
+      "name": "Bnbcoin",
+      "type": "item",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnbcoin"
+    },
+    {
+      "name": "Kubcoin",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kubcoin"
+    },
+    {
+      "name": "Sandcoin",
+      "type": "item",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandcoin"
+    },
+    {
+      "name": "Manacoin",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manacoin"
+    },
+    {
+      "name": "Usdtcoin",
+      "type": "item",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdtcoin"
     }
   ],
   "variable_elements": [

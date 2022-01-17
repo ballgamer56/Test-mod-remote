@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bettergpu",
+    "texture": "advancegpu",
     "customModelName": "Normal",
-    "name": "GTX 1080Ti",
-    "rarity": "UNCOMMON",
+    "name": "RTX 2060",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "MISC"
     },

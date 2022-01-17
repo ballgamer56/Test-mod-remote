@@ -22,6 +22,7 @@ import net.mcreator.testmod.item.Rigaxe2Item;
 import net.mcreator.testmod.item.PlasticItem;
 import net.mcreator.testmod.item.Picklv3Item;
 import net.mcreator.testmod.item.PickLv2Item;
+import net.mcreator.testmod.item.NextGenGPUItem;
 import net.mcreator.testmod.item.ManacoinItem;
 import net.mcreator.testmod.item.KubcoinItem;
 import net.mcreator.testmod.item.HardwareWalletItem;
@@ -37,12 +38,14 @@ import net.mcreator.testmod.item.CpuItem;
 import net.mcreator.testmod.item.CoolantItem;
 import net.mcreator.testmod.item.Cchip4Item;
 import net.mcreator.testmod.item.Cchip3Item;
+import net.mcreator.testmod.item.BoardItem;
 import net.mcreator.testmod.item.BnbcoinItem;
 import net.mcreator.testmod.item.BetterGPUItem;
 import net.mcreator.testmod.item.BetterChipItem;
 import net.mcreator.testmod.item.BasicchipItem;
 import net.mcreator.testmod.item.BasicGPUItem;
 import net.mcreator.testmod.item.BTCItem;
+import net.mcreator.testmod.item.AdvanceGPUItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -86,12 +89,15 @@ public class TestModModItems {
 	public static final Item BASIC_GPU = register(new BasicGPUItem());
 	public static final Item RIGAXE_2 = register(new Rigaxe2Item());
 	public static final Item BETTER_GPU = register(new BetterGPUItem());
-	public static final Item MINING_RIG = register(TestModModBlocks.MINING_RIG, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item MINING_RIG = register(TestModModBlocks.MINING_RIG, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item KUBCOIN = register(new KubcoinItem());
 	public static final Item MANACOIN = register(new ManacoinItem());
 	public static final Item SANDCOIN = register(new SandcoinItem());
 	public static final Item USDTCOIN = register(new UsdtcoinItem());
 	public static final Item BNBCOIN = register(new BnbcoinItem());
+	public static final Item ADVANCE_GPU = register(new AdvanceGPUItem());
+	public static final Item NEXT_GEN_GPU = register(new NextGenGPUItem());
+	public static final Item BOARD = register(new BoardItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -6,10 +6,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-public class BetterGPUItem extends Item {
-	public BetterGPUItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(500).rarity(Rarity.UNCOMMON));
-		setRegistryName("better_gpu");
+public class AdvanceGPUItem extends Item {
+	public AdvanceGPUItem() {
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(500).rarity(Rarity.RARE));
+		setRegistryName("advance_gpu");
 	}
 
 	@Override

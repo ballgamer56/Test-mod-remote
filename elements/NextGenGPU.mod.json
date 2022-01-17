@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bettergpu",
+    "texture": "rtx3080",
     "customModelName": "Normal",
-    "name": "GTX 1080Ti",
-    "rarity": "UNCOMMON",
+    "name": "RTX 3080",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "MISC"
     },

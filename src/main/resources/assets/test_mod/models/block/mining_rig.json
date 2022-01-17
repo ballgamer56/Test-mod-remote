@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "test_mod:blocks/chipfabside",
-    "up": "test_mod:blocks/chipfabside",
+    "up": "test_mod:blocks/rigtop",
     "north": "test_mod:blocks/chipfabside",
     "east": "test_mod:blocks/chipfabside",
     "south": "test_mod:blocks/chipfabside",

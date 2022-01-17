@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "chipfabside",
-    "textureTop": "chipfabside",
+    "textureTop": "rigtop",
     "textureLeft": "chipfabside",
     "textureFront": "chipfabside",
     "textureRight": "chipfabside",
@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "DECORATIONS"
     },
     "destroyTool": "Not specified",
     "customDrop": {

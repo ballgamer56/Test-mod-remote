@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "test_mod:crypto_world"
     },
@@ -10,7 +9,7 @@
     "description": {
       "translate": "advancements.crypto_start.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
@@ -22,5 +21,30 @@
         "to": "test_mod:crypto_world"
       }
     }
-  }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "test_mod:cmp_1recipe",
+      "test_mod:cmp_2",
+      "test_mod:d_wallet",
+      "test_mod:et_hwall",
+      "test_mod:goldchip",
+      "test_mod:cmp",
+      "test_mod:fancraft",
+      "test_mod:cpucraft",
+      "test_mod:rigaxe",
+      "test_mod:rig_2",
+      "test_mod:boardrecipe",
+      "test_mod:rig_recipe",
+      "test_mod:rig_recipe",
+      "test_mod:plastic_milk_recipe",
+      "test_mod:silicon_recipe",
+      "test_mod:chip_fab_recipe",
+      "test_mod:chip_ass_rec",
+      "test_mod:crypt_stone_recipe",
+      "test_mod:assembler_recipe"
+    ]
+  },
+  "parent": "minecraft:story/mine_stone"
 }

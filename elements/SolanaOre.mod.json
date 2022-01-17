@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:BTC"
+      "value": "CUSTOM:Solanacoin"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

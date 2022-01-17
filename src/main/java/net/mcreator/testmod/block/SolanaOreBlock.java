@@ -40,7 +40,7 @@ public class SolanaOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(TestModModItems.BTC));
+		return Collections.singletonList(new ItemStack(TestModModItems.SOLANACOIN));
 	}
 
 	@OnlyIn(Dist.CLIENT)

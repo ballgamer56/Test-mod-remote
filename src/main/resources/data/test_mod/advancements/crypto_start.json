@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "test_mod:crypto_world"
+    },
+    "title": {
+      "translate": "advancements.crypto_start.title"
+    },
+    "description": {
+      "translate": "advancements.crypto_start.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crypto_start": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "test_mod:crypto_world"
+      }
+    }
+  }
+}

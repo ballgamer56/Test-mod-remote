@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "test_mod:basicchip"
+    },
+    "1": {
+      "item": "test_mod:basicchip"
+    },
+    "2": {
+      "item": "test_mod:basicchip"
+    },
+    "4": {
+      "item": "test_mod:fab_chip"
+    },
+    "7": {
+      "item": "test_mod:silicon"
+    }
+  },
+  "result": {
+    "item": "test_mod:crypto_mining_pickaxe",
+    "count": 1
+  }
+}

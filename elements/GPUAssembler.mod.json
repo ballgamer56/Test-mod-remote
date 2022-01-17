@@ -1,0 +1,107 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 235,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 36,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.MILK_BUCKET"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 204,
+          "y": 17
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 177,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Plastic Maker",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Plastic Maker",
+          "x": 178,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sieve.png",
+          "use1Xscale": false,
+          "name": "sieve.png",
+          "x": 165,
+          "y": 81
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 231,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blade1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PlasticProgress0"
+          },
+          "name": "blade1.png",
+          "x": 195,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blade2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PlasticProgress1"
+          },
+          "name": "blade2.png",
+          "x": 195,
+          "y": 44
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

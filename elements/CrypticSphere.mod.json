@@ -1,0 +1,124 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Cryptic Sphere",
+    "groundBlock": {
+      "value": "CUSTOM:CryptStone"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:CryptStone"
+    },
+    "airColor": {
+      "value": -3342388,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -6710887,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -16711936,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -6684724,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -3342388,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "ambient.cave"
+    },
+    "additionsSound": {
+      "value": "block.fire.ambient"
+    },
+    "music": {
+      "value": "record.13"
+    },
+    "moodSound": {
+      "value": "entity.endermen.teleport"
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "FALLING_OBSIDIAN_TEAR"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "ICY",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "ICY",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "taiga",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityZombie"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

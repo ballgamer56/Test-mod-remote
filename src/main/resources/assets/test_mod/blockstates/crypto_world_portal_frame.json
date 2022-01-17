@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "test_mod:block/crypto_world_portal_frame"
+    }
+  }
+}

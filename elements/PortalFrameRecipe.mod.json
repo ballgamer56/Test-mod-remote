@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "cryptoworld",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BetterChip"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "CUSTOM:BetterChip"
+      },
+      {
+        "value": "CUSTOM:FabChip"
+      },
+      {
+        "value": "CUSTOM:Basicchip"
+      },
+      {
+        "value": "CUSTOM:FabChip"
+      },
+      {
+        "value": "CUSTOM:BetterChip"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "CUSTOM:BetterChip"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CryptoWorldPortalFrame"
+    },
+    "name": "portal_frame_recipe",
+    "namespace": "mod"
+  }
+}

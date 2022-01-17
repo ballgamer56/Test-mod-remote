@@ -1,0 +1,756 @@
+{
+  "mod_elements": [
+    {
+      "name": "CryptStone",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypt_stone"
+    },
+    {
+      "name": "CrypticSphere",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryptic_sphere"
+    },
+    {
+      "name": "Coolant",
+      "type": "fluid",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolant",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "CryptoWorld",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_world",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Dogecoin",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dogecoin"
+    },
+    {
+      "name": "DogeOre",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doge_ore"
+    },
+    {
+      "name": "CryptoMiningPickaxe",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_mining_pickaxe"
+    },
+    {
+      "name": "HardwareWallet",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hardware_wallet"
+    },
+    {
+      "name": "Wallet",
+      "type": "gui",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallet"
+    },
+    {
+      "name": "CryptoStart",
+      "type": "achievement",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_start"
+    },
+    {
+      "name": "PickLv2",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pick_lv_2"
+    },
+    {
+      "name": "CryptoWorldPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_world_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ETHOre",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eth_ore"
+    },
+    {
+      "name": "Ethereum",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ethereum"
+    },
+    {
+      "name": "Ethwallet",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ethwallet"
+    },
+    {
+      "name": "ETHGui",
+      "type": "gui",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eth_gui"
+    },
+    {
+      "name": "ChipFab",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip_fab"
+    },
+    {
+      "name": "Fab",
+      "type": "gui",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fab"
+    },
+    {
+      "name": "Silicon",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon"
+    },
+    {
+      "name": "FabChip",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fab_chip"
+    },
+    {
+      "name": "ChipFabUpdateTick",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip_fab_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChipFabBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip_fab_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress0",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress1",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress2",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress3",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress4",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_4",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress5",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_5",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Basicchip",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basicchip"
+    },
+    {
+      "name": "Basiccchipfab",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basiccchipfab"
+    },
+    {
+      "name": "BasicCFab",
+      "type": "gui",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_c_fab"
+    },
+    {
+      "name": "Chipassem",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chipassem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BetterChip",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_chip"
+    },
+    {
+      "name": "CryptoWorldPortalFrame",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_world_portal_frame"
+    },
+    {
+      "name": "PortalFrameRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_frame_recipe"
+    },
+    {
+      "name": "Cmp1recipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmp_1recipe"
+    },
+    {
+      "name": "Cmp2",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmp_2"
+    },
+    {
+      "name": "DWallet",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_wallet"
+    },
+    {
+      "name": "ETHwall",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "et_hwall"
+    },
+    {
+      "name": "Goldchip",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldchip"
+    },
+    {
+      "name": "Cchip3",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cchip_3"
+    },
+    {
+      "name": "Cchip4",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cchip_4"
+    },
+    {
+      "name": "Picklv3",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "picklv_3"
+    },
+    {
+      "name": "Cmp",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmp"
+    },
+    {
+      "name": "BTCOre",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "btc_ore"
+    },
+    {
+      "name": "BTC",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "btc"
+    },
+    {
+      "name": "GraphicPick1",
+      "type": "tool",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graphic_pick_1"
+    },
+    {
+      "name": "Plastic",
+      "type": "item",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic"
+    },
+    {
+      "name": "GPUAssembler",
+      "type": "gui",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasticmaker"
+    },
+    {
+      "name": "MilkPlastic",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_plastic"
+    },
+    {
+      "name": "MilkPlasticUpdateTick",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_plastic_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlasticProgress0",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_progress_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlasticProgress1",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_progress_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "dogeprice",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.test_mod.crypto_world": "Gold Plated Computer Chip",
+      "item.test_mod.ethwallet": "Hardware Wallet (Ethereum)",
+      "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
+      "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
+      "item.test_mod.coolant_bucket": "Cryptic Water Bucket",
+      "advancements.crypto_start.title": "Virtual Miner",
+      "item.test_mod.crypto_mining_pickaxe": "Crypto Mining Pickaxe Level 1",
+      "advancements.crypto_start.descr": "Entered the world of crypto mining",
+      "biome.test_mod.cryptic_sphere": "Cryptic Sphere",
+      "block.test_mod.eth_ore": "Ether Ore",
+      "item.test_mod.btc": "Bitcoin",
+      "item.test_mod.dogecoin": "Dogecoin",
+      "item.test_mod.cchip_3": "Basic Computer Chip (TSOP)",
+      "block.test_mod.crypt_stone": "Crypt Stone",
+      "item.test_mod.cchip_4": "Better Computer Chip (TSOP)",
+      "item.test_mod.silicon": "Silicon",
+      "item.test_mod.basicchip": "Basic Computer Chip (DIP)",
+      "item.test_mod.pick_lv_2": "Crypto Mining Pickaxe Level 2",
+      "block.test_mod.crypto_world_portal_frame": "Crypto World Portal Frame",
+      "block.test_mod.btc_ore": "Bitcoin Ore",
+      "fluid.test_mod.coolant": "Cryptic Water",
+      "block.test_mod.basiccchipfab": "Chip Assembler",
+      "block.test_mod.milk_plastic": "Plastic Maker",
+      "item.test_mod.better_chip": "Better Computer Chip (DIP)",
+      "block.test_mod.doge_ore": "Doge Ore",
+      "block.test_mod.coolant": "Cryptic Water",
+      "block.test_mod.chip_fab": "Chip Fabricator",
+      "item.test_mod.fab_chip": "Fabricated Chip Die",
+      "item.test_mod.hardware_wallet": "Hardware Wallet (Dogecoin)",
+      "item.test_mod.ethereum": "Ethereum",
+      "item.test_mod.plastic": "Plastic"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "test_mod",
+    "modName": "Test Mod",
+    "version": "1.0.0",
+    "author": "User, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "modElementsPackage": "net.mcreator.testmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100353117
+}

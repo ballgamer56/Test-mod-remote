@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "test_mod:block/milk_plastic"
+    },
+    "facing=east": {
+      "model": "test_mod:block/milk_plastic",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "test_mod:block/milk_plastic",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "test_mod:block/milk_plastic",
+      "y": 270
+    }
+  }
+}

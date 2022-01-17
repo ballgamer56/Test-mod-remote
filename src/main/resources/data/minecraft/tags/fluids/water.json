@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "test_mod:coolant",
+    "test_mod:flowing_coolant"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "test_mod:chip_fab",
+    "test_mod:basiccchipfab",
+    "test_mod:milk_plastic"
+  ]
+}

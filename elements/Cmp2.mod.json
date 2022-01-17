@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BetterChip"
+      },
+      {
+        "value": "CUSTOM:BetterChip"
+      },
+      {
+        "value": "CUSTOM:BetterChip"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FabChip"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Basicchip"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PickLv2"
+    },
+    "name": "cmp_2",
+    "namespace": "mod"
+  }
+}

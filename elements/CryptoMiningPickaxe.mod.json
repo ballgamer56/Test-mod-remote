@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "cryptopick",
+    "customModelName": "Normal",
+    "name": "Crypto Mining Pickaxe Level 1",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 5,
+    "efficiency": 7.5,
+    "attackSpeed": 1.0,
+    "enchantability": 1,
+    "damageVsEntity": 4.0,
+    "usageCount": 200,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:CryptStone"
+      },
+      {
+        "value": "CUSTOM:DogeOre"
+      },
+      {
+        "value": "CUSTOM:ETHOre"
+      },
+      {
+        "value": "CUSTOM:BTCOre"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

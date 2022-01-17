@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "test_mod:blocks/btcore",
+    "up": "test_mod:blocks/btcore",
+    "north": "test_mod:blocks/btcore",
+    "east": "test_mod:blocks/btcore",
+    "south": "test_mod:blocks/btcore",
+    "west": "test_mod:blocks/btcore",
+    "particle": "test_mod:blocks/btcore"
+  }
+}

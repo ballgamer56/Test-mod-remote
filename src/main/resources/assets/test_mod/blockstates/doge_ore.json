@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "test_mod:block/doge_ore"
+    }
+  }
+}

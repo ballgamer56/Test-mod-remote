@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "pick3",
+    "customModelName": "Normal",
+    "name": "Crypto Mining Pickaxe Level 3",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 5,
+    "efficiency": 17.5,
+    "attackSpeed": 1.0,
+    "enchantability": 1,
+    "damageVsEntity": 4.0,
+    "usageCount": 1000,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:CryptStone"
+      },
+      {
+        "value": "CUSTOM:DogeOre"
+      },
+      {
+        "value": "CUSTOM:ETHOre"
+      },
+      {
+        "value": "CUSTOM:BTCOre"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

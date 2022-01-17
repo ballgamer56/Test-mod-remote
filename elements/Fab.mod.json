@@ -1,0 +1,166 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 220,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 28,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Chip Fabricator",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Chip Fabricator",
+          "x": 174,
+          "y": 14
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.REDSTONE"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 204,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.IRON_INGOT"
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 168,
+          "y": 35
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Silicon"
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 240,
+          "y": 35
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 204,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress0"
+          },
+          "name": "arrow_0.png",
+          "x": 204,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress1"
+          },
+          "name": "arrow_1.png",
+          "x": 204,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress2"
+          },
+          "name": "arrow_2.png",
+          "x": 204,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress3"
+          },
+          "name": "arrow_3.png",
+          "x": 204,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress4"
+          },
+          "name": "arrow_4.png",
+          "x": 204,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress5"
+          },
+          "name": "arrow_5.png",
+          "x": 204,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

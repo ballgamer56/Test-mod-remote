@@ -741,6 +741,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "solana_ore"
+    },
+    {
+      "name": "Cpucraft",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cpucraft"
     }
   ],
   "variable_elements": [

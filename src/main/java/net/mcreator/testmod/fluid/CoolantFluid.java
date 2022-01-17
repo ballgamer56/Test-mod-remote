@@ -18,7 +18,7 @@ import net.mcreator.testmod.init.TestModModBlocks;
 public abstract class CoolantFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> TestModModFluids.COOLANT,
 			() -> TestModModFluids.FLOWING_COOLANT,
-			FluidAttributes.builder(new ResourceLocation("test_mod:blocks/coolantstatic"), new ResourceLocation("test_mod:blocks/coolantstatic"))
+			FluidAttributes.builder(new ResourceLocation("test_mod:blocks/coolantstatic2"), new ResourceLocation("test_mod:blocks/coolantstatic2"))
 
 					.sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")))).explosionResistance(100f)
 

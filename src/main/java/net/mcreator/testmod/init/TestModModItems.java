@@ -82,6 +82,11 @@ public class TestModModItems {
 	public static final Item RIGAXE_2 = register(new Rigaxe2Item());
 	public static final Item BETTER_GPU = register(new BetterGPUItem());
 	public static final Item MINING_RIG = register(TestModModBlocks.MINING_RIG, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item KUBCOIN = register(new KubcoinItem());
+	public static final Item MANACOIN = register(new ManacoinItem());
+	public static final Item SANDCOIN = register(new SandcoinItem());
+	public static final Item USDTCOIN = register(new UsdtcoinItem());
+	public static final Item BNBCOIN = register(new BnbcoinItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

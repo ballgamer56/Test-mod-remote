@@ -29,6 +29,12 @@
       },
       {
         "value": "CUSTOM:BTCOre"
+      },
+      {
+        "value": "CUSTOM:UniswapOre"
+      },
+      {
+        "value": "CUSTOM:SolanaOre"
       }
     ],
     "hasGlow": false,

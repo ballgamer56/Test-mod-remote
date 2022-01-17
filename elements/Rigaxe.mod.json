@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BasicGPU"
+      },
+      {
+        "value": "CUSTOM:BasicGPU"
+      },
+      {
+        "value": "CUSTOM:BasicGPU"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Fan"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GraphicPick1"
+    },
+    "name": "rigaxe",
+    "namespace": "mod"
+  }
+}

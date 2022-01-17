@@ -34,6 +34,7 @@ import net.mcreator.testmod.item.Cchip4Item;
 import net.mcreator.testmod.item.Cchip3Item;
 import net.mcreator.testmod.item.BetterChipItem;
 import net.mcreator.testmod.item.BasicchipItem;
+import net.mcreator.testmod.item.BasicGPUItem;
 import net.mcreator.testmod.item.BTCItem;
 
 import java.util.List;
@@ -74,6 +75,8 @@ public class TestModModItems {
 	public static final Item SOLANA_ORE = register(TestModModBlocks.SOLANA_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item CPU = register(new CpuItem());
 	public static final Item UNISWAP_ORE = register(TestModModBlocks.UNISWAP_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item ASSEMBLER_BLOCK = register(TestModModBlocks.ASSEMBLER_BLOCK, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BASIC_GPU = register(new BasicGPUItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -11,6 +11,7 @@
   "biome.test_mod.cryptic_sphere": "Cryptic Sphere",
   "block.test_mod.eth_ore": "Ether Ore",
   "item.test_mod.btc": "Bitcoin",
+  "block.test_mod.assembler_block": "Plastic Maker",
   "item.test_mod.dogecoin": "Dogecoin",
   "item.test_mod.cchip_3": "Basic Computer Chip (TSOP)",
   "item.test_mod.fan": "Fan",
@@ -33,6 +34,7 @@
   "item.test_mod.solanacoin": "Solana",
   "block.test_mod.chip_fab": "Chip Fabricator",
   "item.test_mod.fab_chip": "Fabricated Chip Die",
+  "item.test_mod.basic_gpu": "Basic GPU",
   "item.test_mod.hardware_wallet": "Hardware Wallet (Dogecoin)",
   "item.test_mod.ethereum": "Ethereum",
   "item.test_mod.plastic": "Plastic"

@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.testmod.block.entity.MilkPlasticBlockEntity;
 import net.mcreator.testmod.block.entity.ChipFabBlockEntity;
 import net.mcreator.testmod.block.entity.BasiccchipfabBlockEntity;
+import net.mcreator.testmod.block.entity.AssemblerBlockBlockEntity;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -26,6 +27,8 @@ public class TestModModBlockEntities {
 			BasiccchipfabBlockEntity::new);
 	public static final BlockEntityType<?> MILK_PLASTIC = register("test_mod:milk_plastic", TestModModBlocks.MILK_PLASTIC,
 			MilkPlasticBlockEntity::new);
+	public static final BlockEntityType<?> ASSEMBLER_BLOCK = register("test_mod:assembler_block", TestModModBlocks.ASSEMBLER_BLOCK,
+			AssemblerBlockBlockEntity::new);
 
 	private static BlockEntityType<?> register(String registryname, Block block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		BlockEntityType<?> blockEntityType = BlockEntityType.Builder.of(supplier, block).build(null).setRegistryName(registryname);

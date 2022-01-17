@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "test_mod:basic_gpu"
+    },
+    "1": {
+      "item": "test_mod:basic_gpu"
+    },
+    "2": {
+      "item": "test_mod:basic_gpu"
+    },
+    "4": {
+      "item": "test_mod:fan"
+    },
+    "7": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "test_mod:graphic_pick_1",
+    "count": 1
+  }
+}

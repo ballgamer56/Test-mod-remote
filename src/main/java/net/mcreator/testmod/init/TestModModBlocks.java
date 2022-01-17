@@ -22,6 +22,7 @@ import net.mcreator.testmod.block.CoolantBlock;
 import net.mcreator.testmod.block.ChipFabBlock;
 import net.mcreator.testmod.block.BasiccchipfabBlock;
 import net.mcreator.testmod.block.BTCOreBlock;
+import net.mcreator.testmod.block.AssemblerBlockBlock;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -41,6 +42,7 @@ public class TestModModBlocks {
 	public static final Block MILK_PLASTIC = register(new MilkPlasticBlock());
 	public static final Block SOLANA_ORE = register(new SolanaOreBlock());
 	public static final Block UNISWAP_ORE = register(new UniswapOreBlock());
+	public static final Block ASSEMBLER_BLOCK = register(new AssemblerBlockBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

@@ -17,6 +17,7 @@ import net.mcreator.testmod.world.inventory.GPUAssemblerMenu;
 import net.mcreator.testmod.world.inventory.FabMenu;
 import net.mcreator.testmod.world.inventory.ETHGuiMenu;
 import net.mcreator.testmod.world.inventory.BasicCFabMenu;
+import net.mcreator.testmod.world.inventory.AssemblerMenu;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -30,6 +31,7 @@ public class TestModModMenus {
 	public static final MenuType<BasicCFabMenu> BASIC_C_FAB = register("basic_c_fab", (id, inv, extraData) -> new BasicCFabMenu(id, inv, extraData));
 	public static final MenuType<GPUAssemblerMenu> PLASTICMAKER = register("plasticmaker",
 			(id, inv, extraData) -> new GPUAssemblerMenu(id, inv, extraData));
+	public static final MenuType<AssemblerMenu> ASSEMBLER = register("assembler", (id, inv, extraData) -> new AssemblerMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

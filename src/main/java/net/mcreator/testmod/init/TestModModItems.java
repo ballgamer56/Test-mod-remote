@@ -14,7 +14,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.testmod.item.UniswapcoinItem;
-import net.mcreator.testmod.item.TestPullItem;
 import net.mcreator.testmod.item.SolanacoinItem;
 import net.mcreator.testmod.item.SiliconItem;
 import net.mcreator.testmod.item.PlasticItem;
@@ -22,12 +21,14 @@ import net.mcreator.testmod.item.Picklv3Item;
 import net.mcreator.testmod.item.PickLv2Item;
 import net.mcreator.testmod.item.HardwareWalletItem;
 import net.mcreator.testmod.item.GraphicPick1Item;
+import net.mcreator.testmod.item.FanItem;
 import net.mcreator.testmod.item.FabChipItem;
 import net.mcreator.testmod.item.EthwalletItem;
 import net.mcreator.testmod.item.EthereumItem;
 import net.mcreator.testmod.item.DogecoinItem;
 import net.mcreator.testmod.item.CryptoWorldItem;
 import net.mcreator.testmod.item.CryptoMiningPickaxeItem;
+import net.mcreator.testmod.item.CpuItem;
 import net.mcreator.testmod.item.CoolantItem;
 import net.mcreator.testmod.item.Cchip4Item;
 import net.mcreator.testmod.item.Cchip3Item;
@@ -69,7 +70,8 @@ public class TestModModItems {
 	public static final Item MILK_PLASTIC = register(TestModModBlocks.MILK_PLASTIC, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item SOLANACOIN = register(new SolanacoinItem());
 	public static final Item UNISWAPCOIN = register(new UniswapcoinItem());
-	public static final Item TEST_PULL = register(new TestPullItem());
+	public static final Item FAN = register(new FanItem());
+	public static final Item CPU = register(new CpuItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

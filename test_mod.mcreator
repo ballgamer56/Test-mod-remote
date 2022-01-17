@@ -703,12 +703,28 @@
       "registry_name": "uniswapcoin"
     },
     {
-      "name": "TestPull",
+      "name": "Fan",
       "type": "item",
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test_pull"
+      "registry_name": "fan"
+    },
+    {
+      "name": "Fancraft",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fancraft"
+    },
+    {
+      "name": "Cpu",
+      "type": "item",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cpu"
     }
   ],
   "variable_elements": [
@@ -722,8 +738,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.test_mod.crypto_world": "Gold Plated Computer Chip",
       "item.test_mod.ethwallet": "Hardware Wallet (Ethereum)",
+      "item.test_mod.crypto_world": "Gold Plated Computer Chip",
       "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
       "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
       "item.test_mod.coolant_bucket": "Cryptic Water Bucket",
@@ -735,9 +751,9 @@
       "item.test_mod.btc": "Bitcoin",
       "item.test_mod.dogecoin": "Dogecoin",
       "item.test_mod.cchip_3": "Basic Computer Chip (TSOP)",
+      "item.test_mod.fan": "Fan",
       "block.test_mod.crypt_stone": "Crypt Stone",
       "item.test_mod.cchip_4": "Better Computer Chip (TSOP)",
-      "item.test_mod.test_pull": "Uniswapcoin",
       "item.test_mod.silicon": "Silicon",
       "item.test_mod.basicchip": "Basic Computer Chip (DIP)",
       "item.test_mod.pick_lv_2": "Crypto Mining Pickaxe Level 2",
@@ -749,6 +765,7 @@
       "block.test_mod.milk_plastic": "Plastic Maker",
       "item.test_mod.better_chip": "Better Computer Chip (DIP)",
       "block.test_mod.doge_ore": "Doge Ore",
+      "item.test_mod.cpu": "Regular Socketed CPU",
       "block.test_mod.coolant": "Cryptic Water",
       "item.test_mod.solanacoin": "Solana",
       "block.test_mod.chip_fab": "Chip Fabricator",

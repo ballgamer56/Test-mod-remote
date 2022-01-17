@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "test_mod:plastic"
+    },
+    "3": {
+      "item": "test_mod:plastic"
+    },
+    "4": {
+      "item": "minecraft:iron_nugget"
+    },
+    "5": {
+      "item": "test_mod:plastic"
+    },
+    "7": {
+      "item": "test_mod:plastic"
+    }
+  },
+  "result": {
+    "item": "test_mod:fan",
+    "count": 2
+  }
+}

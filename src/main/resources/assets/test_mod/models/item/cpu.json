@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "test_mod:items/7083"
+    "layer0": "test_mod:items/cpu"
   }
 }

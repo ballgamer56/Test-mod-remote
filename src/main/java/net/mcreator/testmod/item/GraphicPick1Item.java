@@ -28,8 +28,8 @@ public class GraphicPick1Item extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of(TestModModBlocks.CRYPT_STONE, TestModModBlocks.DOGE_ORE, TestModModBlocks.ETH_ORE, TestModModBlocks.BTC_ORE)
-				.contains(blockstate.getBlock()) ? 25f : 1;
+		return List.of(TestModModBlocks.CRYPT_STONE, TestModModBlocks.DOGE_ORE, TestModModBlocks.ETH_ORE, TestModModBlocks.BTC_ORE,
+				TestModModBlocks.UNISWAP_ORE, TestModModBlocks.SOLANA_ORE).contains(blockstate.getBlock()) ? 25f : 1;
 	}
 
 	@Override

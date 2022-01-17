@@ -8,7 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 
 public class UniswapcoinItem extends Item {
 	public UniswapcoinItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("uniswapcoin");
 	}
 

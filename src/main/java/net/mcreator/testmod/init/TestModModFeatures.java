@@ -16,6 +16,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
+import net.mcreator.testmod.world.features.ores.UniswapOreFeature;
+import net.mcreator.testmod.world.features.ores.SolanaOreFeature;
 import net.mcreator.testmod.world.features.ores.ETHOreFeature;
 import net.mcreator.testmod.world.features.ores.DogeOreFeature;
 import net.mcreator.testmod.world.features.ores.BTCOreFeature;
@@ -34,6 +36,10 @@ public class TestModModFeatures {
 				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, ETHOreFeature.GENERATE_BIOMES, ETHOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(BTCOreFeature.FEATURE,
 				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BTCOreFeature.GENERATE_BIOMES, BTCOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(SolanaOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, SolanaOreFeature.GENERATE_BIOMES,
+				SolanaOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(UniswapOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, UniswapOreFeature.GENERATE_BIOMES,
+				UniswapOreFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

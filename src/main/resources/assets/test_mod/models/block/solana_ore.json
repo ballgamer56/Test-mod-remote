@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "test_mod:blocks/solana_ore",
+    "up": "test_mod:blocks/solana_ore",
+    "north": "test_mod:blocks/solana_ore",
+    "east": "test_mod:blocks/solana_ore",
+    "south": "test_mod:blocks/solana_ore",
+    "west": "test_mod:blocks/solana_ore",
+    "particle": "test_mod:blocks/solana_ore"
+  }
+}

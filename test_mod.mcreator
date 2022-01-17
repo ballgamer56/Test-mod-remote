@@ -701,6 +701,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniswapcoin"
+    },
+    {
+      "name": "SolanaOre",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solana_ore"
+    },
+    {
+      "name": "UniswapOre",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uniswap_ore"
     }
   ],
   "variable_elements": [
@@ -714,14 +730,15 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.test_mod.ethwallet": "Hardware Wallet (Ethereum)",
       "item.test_mod.crypto_world": "Gold Plated Computer Chip",
+      "item.test_mod.ethwallet": "Hardware Wallet (Ethereum)",
       "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
       "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
       "item.test_mod.coolant_bucket": "Cryptic Water Bucket",
       "advancements.crypto_start.title": "Virtual Miner",
       "item.test_mod.crypto_mining_pickaxe": "Crypto Mining Pickaxe Level 1",
       "advancements.crypto_start.descr": "Entered the world of crypto mining",
+      "block.test_mod.uniswap_ore": "Bitcoin Ore",
       "biome.test_mod.cryptic_sphere": "Cryptic Sphere",
       "block.test_mod.eth_ore": "Ether Ore",
       "item.test_mod.btc": "Bitcoin",
@@ -740,6 +757,7 @@
       "block.test_mod.milk_plastic": "Plastic Maker",
       "item.test_mod.better_chip": "Better Computer Chip (DIP)",
       "block.test_mod.doge_ore": "Doge Ore",
+      "block.test_mod.solana_ore": "Bitcoin Ore",
       "block.test_mod.coolant": "Cryptic Water",
       "item.test_mod.solanacoin": "Solana",
       "block.test_mod.chip_fab": "Chip Fabricator",

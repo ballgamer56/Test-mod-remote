@@ -68,6 +68,8 @@ public class TestModModItems {
 	public static final Item MILK_PLASTIC = register(TestModModBlocks.MILK_PLASTIC, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item SOLANACOIN = register(new SolanacoinItem());
 	public static final Item UNISWAPCOIN = register(new UniswapcoinItem());
+	public static final Item SOLANA_ORE = register(TestModModBlocks.SOLANA_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item UNISWAP_ORE = register(TestModModBlocks.UNISWAP_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

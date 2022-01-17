@@ -10,6 +10,8 @@ import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.testmod.block.UniswapOreBlock;
+import net.mcreator.testmod.block.SolanaOreBlock;
 import net.mcreator.testmod.block.MilkPlasticBlock;
 import net.mcreator.testmod.block.ETHOreBlock;
 import net.mcreator.testmod.block.DogeOreBlock;
@@ -37,6 +39,8 @@ public class TestModModBlocks {
 	public static final Block CRYPTO_WORLD_PORTAL_FRAME = register(new CryptoWorldPortalFrameBlock());
 	public static final Block BTC_ORE = register(new BTCOreBlock());
 	public static final Block MILK_PLASTIC = register(new MilkPlasticBlock());
+	public static final Block SOLANA_ORE = register(new SolanaOreBlock());
+	public static final Block UNISWAP_ORE = register(new UniswapOreBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

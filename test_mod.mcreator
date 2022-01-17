@@ -703,14 +703,6 @@
       "registry_name": "uniswapcoin"
     },
     {
-      "name": "Fan",
-      "type": "item",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fan"
-    },
-    {
       "name": "Fancraft",
       "type": "recipe",
       "sortid": 52,
@@ -719,12 +711,36 @@
       "registry_name": "fancraft"
     },
     {
+      "name": "Fan",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fan"
+    },
+    {
       "name": "Cpu",
       "type": "item",
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cpu"
+    },
+    {
+      "name": "UniswapOre",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uniswap_ore"
+    },
+    {
+      "name": "SolanaOre",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solana_ore"
     }
   ],
   "variable_elements": [
@@ -751,7 +767,6 @@
       "item.test_mod.btc": "Bitcoin",
       "item.test_mod.dogecoin": "Dogecoin",
       "item.test_mod.cchip_3": "Basic Computer Chip (TSOP)",
-      "item.test_mod.fan": "Fan",
       "block.test_mod.crypt_stone": "Crypt Stone",
       "item.test_mod.cchip_4": "Better Computer Chip (TSOP)",
       "item.test_mod.silicon": "Silicon",
@@ -765,7 +780,6 @@
       "block.test_mod.milk_plastic": "Plastic Maker",
       "item.test_mod.better_chip": "Better Computer Chip (DIP)",
       "block.test_mod.doge_ore": "Doge Ore",
-      "item.test_mod.cpu": "Regular Socketed CPU",
       "block.test_mod.coolant": "Cryptic Water",
       "item.test_mod.solanacoin": "Solana",
       "block.test_mod.chip_fab": "Chip Fabricator",

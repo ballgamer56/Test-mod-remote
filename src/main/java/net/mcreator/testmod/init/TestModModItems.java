@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.testmod.item.UsdtcoinItem;
 import net.mcreator.testmod.item.UniswapcoinItem;
 import net.mcreator.testmod.item.SolanacoinItem;
 import net.mcreator.testmod.item.SiliconItem;
@@ -36,12 +37,12 @@ import net.mcreator.testmod.item.CpuItem;
 import net.mcreator.testmod.item.CoolantItem;
 import net.mcreator.testmod.item.Cchip4Item;
 import net.mcreator.testmod.item.Cchip3Item;
+import net.mcreator.testmod.item.BnbcoinItem;
 import net.mcreator.testmod.item.BetterGPUItem;
 import net.mcreator.testmod.item.BetterChipItem;
 import net.mcreator.testmod.item.BasicchipItem;
 import net.mcreator.testmod.item.BasicGPUItem;
 import net.mcreator.testmod.item.BTCItem;
-import net.mcreator.testmod.item.BNBcoinItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -89,7 +90,8 @@ public class TestModModItems {
 	public static final Item KUBCOIN = register(new KubcoinItem());
 	public static final Item MANACOIN = register(new ManacoinItem());
 	public static final Item SANDCOIN = register(new SandcoinItem());
-	public static final Item BN_BCOIN = register(new BNBcoinItem());
+	public static final Item USDTCOIN = register(new UsdtcoinItem());
+	public static final Item BNBCOIN = register(new BnbcoinItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sand_coin",
+    "texture": "usdt_coin",
     "customModelName": "Normal",
-    "name": "SAND",
+    "name": "USDT",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

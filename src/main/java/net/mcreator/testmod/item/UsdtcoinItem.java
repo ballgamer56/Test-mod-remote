@@ -6,10 +6,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-public class BNBcoinItem extends Item {
-	public BNBcoinItem() {
+public class UsdtcoinItem extends Item {
+	public UsdtcoinItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("bn_bcoin");
+		setRegistryName("usdtcoin");
 	}
 
 	@Override

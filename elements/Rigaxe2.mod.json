@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "rigaxe2",
+    "customModelName": "Normal",
+    "name": "Crypto Mining Rigaxe Level 2",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 5,
+    "efficiency": 50.0,
+    "attackSpeed": 1.0,
+    "enchantability": 1,
+    "damageVsEntity": 4.0,
+    "usageCount": 1000,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:CryptStone"
+      },
+      {
+        "value": "CUSTOM:DogeOre"
+      },
+      {
+        "value": "CUSTOM:ETHOre"
+      },
+      {
+        "value": "CUSTOM:BTCOre"
+      },
+      {
+        "value": "CUSTOM:UniswapOre"
+      },
+      {
+        "value": "CUSTOM:SolanaOre"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

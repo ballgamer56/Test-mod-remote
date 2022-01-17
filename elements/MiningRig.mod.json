@@ -5,12 +5,12 @@
     "texture": "chipfabside",
     "textureTop": "chipfabside",
     "textureLeft": "chipfabside",
-    "textureFront": "cchipfabfront",
+    "textureFront": "chipfabside",
     "textureRight": "chipfabside",
     "textureBack": "chipfabside",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Chip Assembler",
+    "name": "Mining Rig",
     "specialInfo": [],
-    "hardness": 3.5,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -54,7 +54,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 0,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -96,7 +96,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -105,23 +105,34 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "BasicCFab",
-    "openGUIOnRightClick": true,
-    "inventorySize": 8,
-    "inventoryStackSize": 8,
+    "guiBoundTo": "RigGui",
+    "openGUIOnRightClick": false,
+    "inventorySize": 19,
+    "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [
-      3
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
     ],
     "inventoryInSlotIDs": [
       0,
       1,
       2,
+      3,
       4,
       5,
-      6,
-      7
+      6
     ],
     "hasEnergyStorage": false,
     "energyInitial": 0,
@@ -131,12 +142,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "ChipFabUpdateTick"
-    },
-    "onBlockPlayedBy": {
-      "name": "ChipFabBlockIsPlacedBy"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "basicgpu",
+    "texture": "bettergpu",
     "customModelName": "Normal",
-    "name": "Basic GPU",
+    "name": "Better GPU",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
@@ -14,7 +14,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 250,
+    "damageCount": 500,
     "recipeRemainder": {
       "value": ""
     },

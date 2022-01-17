@@ -23,7 +23,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.testmod.world.inventory.AssemblerMenu;
+import net.mcreator.testmod.world.inventory.RigGuiMenu;
 import net.mcreator.testmod.init.TestModModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -32,12 +32,12 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class AssemblerBlockBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(26, ItemStack.EMPTY);
+public class MiningRigBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(19, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public AssemblerBlockBlockEntity(BlockPos position, BlockState state) {
-		super(TestModModBlockEntities.ASSEMBLER_BLOCK, position, state);
+	public MiningRigBlockEntity(BlockPos position, BlockState state) {
+		super(TestModModBlockEntities.MINING_RIG, position, state);
 	}
 
 	@Override
@@ -87,7 +87,7 @@ public class AssemblerBlockBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDefaultName() {
-		return new TextComponent("assembler_block");
+		return new TextComponent("mining_rig");
 	}
 
 	@Override
@@ -97,12 +97,12 @@ public class AssemblerBlockBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new AssemblerMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new RigGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("Computer Component Assembler");
+		return new TextComponent("Mining Rig");
 	}
 
 	@Override
@@ -117,7 +117,29 @@ public class AssemblerBlockBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
-		if (index == 25)
+		if (index == 7)
+			return false;
+		if (index == 8)
+			return false;
+		if (index == 9)
+			return false;
+		if (index == 10)
+			return false;
+		if (index == 11)
+			return false;
+		if (index == 12)
+			return false;
+		if (index == 13)
+			return false;
+		if (index == 14)
+			return false;
+		if (index == 15)
+			return false;
+		if (index == 16)
+			return false;
+		if (index == 17)
+			return false;
+		if (index == 18)
 			return false;
 		return true;
 	}
@@ -147,42 +169,6 @@ public class AssemblerBlockBlockEntity extends RandomizableContainerBlockEntity 
 		if (index == 5)
 			return false;
 		if (index == 6)
-			return false;
-		if (index == 7)
-			return false;
-		if (index == 8)
-			return false;
-		if (index == 9)
-			return false;
-		if (index == 10)
-			return false;
-		if (index == 11)
-			return false;
-		if (index == 12)
-			return false;
-		if (index == 13)
-			return false;
-		if (index == 14)
-			return false;
-		if (index == 15)
-			return false;
-		if (index == 16)
-			return false;
-		if (index == 17)
-			return false;
-		if (index == 18)
-			return false;
-		if (index == 19)
-			return false;
-		if (index == 20)
-			return false;
-		if (index == 21)
-			return false;
-		if (index == 22)
-			return false;
-		if (index == 23)
-			return false;
-		if (index == 24)
 			return false;
 		return true;
 	}

@@ -13,6 +13,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
 import net.mcreator.testmod.world.inventory.WalletMenu;
+import net.mcreator.testmod.world.inventory.RigGuiMenu;
 import net.mcreator.testmod.world.inventory.GPUAssemblerMenu;
 import net.mcreator.testmod.world.inventory.FabMenu;
 import net.mcreator.testmod.world.inventory.ETHGuiMenu;
@@ -32,6 +33,7 @@ public class TestModModMenus {
 	public static final MenuType<GPUAssemblerMenu> PLASTICMAKER = register("plasticmaker",
 			(id, inv, extraData) -> new GPUAssemblerMenu(id, inv, extraData));
 	public static final MenuType<AssemblerMenu> ASSEMBLER = register("assembler", (id, inv, extraData) -> new AssemblerMenu(id, inv, extraData));
+	public static final MenuType<RigGuiMenu> RIG_GUI = register("rig_gui", (id, inv, extraData) -> new RigGuiMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

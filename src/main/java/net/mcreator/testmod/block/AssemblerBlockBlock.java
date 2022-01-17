@@ -101,12 +101,6 @@ public class AssemblerBlockBlock extends Block
 	}
 
 	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 10);
-	}
-
-	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
@@ -114,7 +108,6 @@ public class AssemblerBlockBlock extends Block
 		int z = pos.getZ();
 
 		MilkPlasticUpdateTickProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 10);
 	}
 
 	@Override
@@ -130,7 +123,7 @@ public class AssemblerBlockBlock extends Block
 			NetworkHooks.openGui(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return new TextComponent("Plastic Maker");
+					return new TextComponent("Computer Component Assembler");
 				}
 
 				@Override

@@ -101,12 +101,6 @@ public class BasiccchipfabBlock extends Block
 	}
 
 	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 20);
-	}
-
-	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
@@ -114,7 +108,6 @@ public class BasiccchipfabBlock extends Block
 		int z = pos.getZ();
 
 		ChipFabUpdateTickProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 20);
 	}
 
 	@Override

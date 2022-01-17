@@ -12,6 +12,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.testmod.world.inventory.AssemblerMenu;
+import net.mcreator.testmod.network.AssemblerButtonMessage;
+import net.mcreator.testmod.TestModMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -67,6 +69,7 @@ public class AssemblerScreen extends AbstractContainerScreen<AssemblerMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack, "Assembly Table", 51, 5, -12829636);
 	}
 
 	@Override
@@ -80,6 +83,10 @@ public class AssemblerScreen extends AbstractContainerScreen<AssemblerMenu> {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 101, this.topPos + 102, 67, 20, new TextComponent("Assemble"), e -> {
+			if (true) {
+				TestModMod.PACKET_HANDLER.sendToServer(new AssemblerButtonMessage(0, x, y, z));
+				AssemblerButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 	}
 }

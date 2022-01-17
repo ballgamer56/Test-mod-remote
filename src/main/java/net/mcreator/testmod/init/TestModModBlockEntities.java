@@ -11,6 +11,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.testmod.block.entity.MiningRigBlockEntity;
 import net.mcreator.testmod.block.entity.MilkPlasticBlockEntity;
 import net.mcreator.testmod.block.entity.ChipFabBlockEntity;
 import net.mcreator.testmod.block.entity.BasiccchipfabBlockEntity;
@@ -29,6 +30,7 @@ public class TestModModBlockEntities {
 			MilkPlasticBlockEntity::new);
 	public static final BlockEntityType<?> ASSEMBLER_BLOCK = register("test_mod:assembler_block", TestModModBlocks.ASSEMBLER_BLOCK,
 			AssemblerBlockBlockEntity::new);
+	public static final BlockEntityType<?> MINING_RIG = register("test_mod:mining_rig", TestModModBlocks.MINING_RIG, MiningRigBlockEntity::new);
 
 	private static BlockEntityType<?> register(String registryname, Block block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		BlockEntityType<?> blockEntityType = BlockEntityType.Builder.of(supplier, block).build(null).setRegistryName(registryname);

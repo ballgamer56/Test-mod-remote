@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.testmod.block.UniswapOreBlock;
 import net.mcreator.testmod.block.SolanaOreBlock;
+import net.mcreator.testmod.block.MiningRigBlock;
 import net.mcreator.testmod.block.MilkPlasticBlock;
 import net.mcreator.testmod.block.ETHOreBlock;
 import net.mcreator.testmod.block.DogeOreBlock;
@@ -43,6 +44,7 @@ public class TestModModBlocks {
 	public static final Block SOLANA_ORE = register(new SolanaOreBlock());
 	public static final Block UNISWAP_ORE = register(new UniswapOreBlock());
 	public static final Block ASSEMBLER_BLOCK = register(new AssemblerBlockBlock());
+	public static final Block MINING_RIG = register(new MiningRigBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

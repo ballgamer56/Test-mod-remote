@@ -13,7 +13,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.testmod.init.TestModModItems;
 
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class AssemblerProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -295,7 +294,7 @@ public class AssemblerProcedureProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 24)).getItem() == TestModModItems.PLASTIC && ((new Object() {
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 24)).getItem() == TestModModItems.PLASTIC && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -306,29 +305,7 @@ public class AssemblerProcedureProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 25)).getItem() == TestModModItems.BASIC_GPU && new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).getCount());
-					});
-				}
-				return _retval.get();
-			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 25) <= 63 || (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-				}
-				return _retval.get();
-			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 25)).getItem() == Blocks.AIR.asItem())) {
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 25)).getItem() == Blocks.AIR.asItem()) {
 			{
 				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -679,66 +656,17 @@ public class AssemblerProcedureProcedure {
 					});
 				}
 			}
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null) {
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-					}
-					return _retval.get();
-				}
-			}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 25)).getItem() == TestModModItems.BASIC_GPU && new Object() {
-				public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null) {
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).getCount());
-						});
-					}
-					return _retval.get();
-				}
-			}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 25) <= 63) {
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
-					if (_ent != null) {
-						final int _sltid = 25;
-						final ItemStack _setstack = new ItemStack(TestModModItems.BASIC_GPU);
-						_setstack.setCount((int) (new Object() {
-							public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
-								AtomicInteger _retval = new AtomicInteger(0);
-								BlockEntity _ent = world.getBlockEntity(pos);
-								if (_ent != null) {
-									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).getCount());
-									});
-								}
-								return _retval.get();
-							}
-						}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 25) + 1));
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
-							}
-						});
-					}
-				}
-			} else {
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
-					if (_ent != null) {
-						final int _sltid = 25;
-						final ItemStack _setstack = new ItemStack(TestModModItems.BASIC_GPU);
-						_setstack.setCount(1);
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
-							}
-						});
-					}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (_ent != null) {
+					final int _sltid = 25;
+					final ItemStack _setstack = new ItemStack(TestModModItems.BASIC_GPU);
+					_setstack.setCount(1);
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+						}
+					});
 				}
 			}
 		}
@@ -1017,7 +945,7 @@ public class AssemblerProcedureProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 24)).getItem() == TestModModItems.PLASTIC && ((new Object() {
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 24)).getItem() == TestModModItems.PLASTIC && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -1028,29 +956,7 @@ public class AssemblerProcedureProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 25)).getItem() == TestModModItems.BETTER_GPU && new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).getCount());
-					});
-				}
-				return _retval.get();
-			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 25) <= 63 || (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-				}
-				return _retval.get();
-			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 25)).getItem() == Blocks.AIR.asItem())) {
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 25)).getItem() == Blocks.AIR.asItem()) {
 			{
 				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -1401,66 +1307,17 @@ public class AssemblerProcedureProcedure {
 					});
 				}
 			}
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null) {
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-					}
-					return _retval.get();
-				}
-			}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 25)).getItem() == TestModModItems.BETTER_GPU && new Object() {
-				public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null) {
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).getCount());
-						});
-					}
-					return _retval.get();
-				}
-			}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 25) <= 63) {
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
-					if (_ent != null) {
-						final int _sltid = 25;
-						final ItemStack _setstack = new ItemStack(TestModModItems.BETTER_GPU);
-						_setstack.setCount((int) (new Object() {
-							public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
-								AtomicInteger _retval = new AtomicInteger(0);
-								BlockEntity _ent = world.getBlockEntity(pos);
-								if (_ent != null) {
-									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).getCount());
-									});
-								}
-								return _retval.get();
-							}
-						}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 25) + 1));
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
-							}
-						});
-					}
-				}
-			} else {
-				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
-					if (_ent != null) {
-						final int _sltid = 25;
-						final ItemStack _setstack = new ItemStack(TestModModItems.BETTER_GPU);
-						_setstack.setCount(1);
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
-							}
-						});
-					}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (_ent != null) {
+					final int _sltid = 25;
+					final ItemStack _setstack = new ItemStack(TestModModItems.BETTER_GPU);
+					_setstack.setCount(1);
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+						}
+					});
 				}
 			}
 		}

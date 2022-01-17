@@ -4,8 +4,8 @@
   "definition": {
     "name": "Cryptic Water",
     "bucketName": "Cryptic Water Bucket",
-    "textureStill": "coolantstatic",
-    "textureFlowing": "coolantstatic",
+    "textureStill": "coolantstatic2",
+    "textureFlowing": "coolantstatic2",
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 5,

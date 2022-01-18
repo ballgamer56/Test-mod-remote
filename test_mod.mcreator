@@ -2065,6 +2065,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uni_advancement"
+    },
+    {
+      "name": "Rigaxe3",
+      "type": "tool",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigaxe_3"
+    },
+    {
+      "name": "Rigaxe4",
+      "type": "tool",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigaxe_4"
     }
   ],
   "variable_elements": [
@@ -2083,8 +2099,8 @@
       "item.test_mod.usdt_9": "USDT x9",
       "item.test_mod.ethwallet": "Hardware Wallet (Ethereum chain)",
       "item.test_mod.crypto_world": "Gold Plated Computer Chip",
-      "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
       "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
+      "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
       "item.test_mod.mana_wallet": "Hardware Wallet (MANA)",
       "item.test_mod.kub_wall": "Hardware Wallet (KUB)",
       "advancements.sa_wad_dee_kub.descr": "KUB to the moon!",
@@ -2146,6 +2162,8 @@
       "block.test_mod.crypt_stone": "Crypt Stone",
       "item.test_mod.cchip_4": "Better Computer Chip (TSOP)",
       "advancements.uni_advancement.title": "A Unicorn!",
+      "item.test_mod.rigaxe_3": "Crypto Mining Drill Level 1",
+      "item.test_mod.rigaxe_4": "Crypto Mining Drill Level 1",
       "advancements.uni_advancement.descr": "Wait no, nevermind. it\u0027s just another coin",
       "block.test_mod.btc_ore": "Bitcoin Ore",
       "item.test_mod.advance_gpu": "RTX 2060",

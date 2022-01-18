@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "test_mod:assembler_block"
+              "test_mod:mining_rig"
             ],
             "count": {
               "min": 1,

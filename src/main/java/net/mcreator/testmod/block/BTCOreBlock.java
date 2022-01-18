@@ -26,7 +26,7 @@ import java.util.Collections;
 
 public class BTCOreBlock extends Block {
 	public BTCOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(17.5f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(50f, 10f));
 		setRegistryName("btc_ore");
 	}
 

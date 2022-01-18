@@ -26,7 +26,7 @@ import java.util.Collections;
 
 public class ETHOreBlock extends Block {
 	public ETHOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(15f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(25f, 10f));
 		setRegistryName("eth_ore");
 	}
 

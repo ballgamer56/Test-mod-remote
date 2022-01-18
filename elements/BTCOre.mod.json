@@ -34,7 +34,7 @@
     ],
     "name": "Bitcoin Ore",
     "specialInfo": [],
-    "hardness": 17.5,
+    "hardness": 50.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,

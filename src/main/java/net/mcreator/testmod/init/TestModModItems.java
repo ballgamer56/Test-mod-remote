@@ -23,6 +23,8 @@ import net.mcreator.testmod.item.SolanacoinItem;
 import net.mcreator.testmod.item.SiliconItem;
 import net.mcreator.testmod.item.SandcoinItem;
 import net.mcreator.testmod.item.SANDWallItem;
+import net.mcreator.testmod.item.Rigaxe4Item;
+import net.mcreator.testmod.item.Rigaxe3Item;
 import net.mcreator.testmod.item.Rigaxe2Item;
 import net.mcreator.testmod.item.PlasticItem;
 import net.mcreator.testmod.item.Picklv3Item;
@@ -115,6 +117,8 @@ public class TestModModItems {
 	public static final Item KUB_WALL = register(new KUBWallItem());
 	public static final Item MANA_WALLET = register(new MANAWalletItem());
 	public static final Item EX = register(TestModModBlocks.EX, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item RIGAXE_3 = register(new Rigaxe3Item());
+	public static final Item RIGAXE_4 = register(new Rigaxe4Item());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

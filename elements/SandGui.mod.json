@@ -13,12 +13,12 @@
       {
         "type": "label",
         "data": {
-          "text": "SAND Wallet",
+          "text": "The Sandbox Wallet",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "SAND Wallet",
+          "name": "The Sandbox Wallet",
           "x": 132,
           "y": 44
         }

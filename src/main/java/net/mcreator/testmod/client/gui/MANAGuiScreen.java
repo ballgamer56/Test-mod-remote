@@ -69,7 +69,7 @@ public class MANAGuiScreen extends AbstractContainerScreen<MANAGuiMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Mana Wallet", 6, 7, -12829636);
+		this.font.draw(poseStack, "Decentraland Wallet", 6, 7, -12829636);
 	}
 
 	@Override

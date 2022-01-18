@@ -13,12 +13,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Mana Wallet",
+          "text": "Decentraland Wallet",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Mana Wallet",
+          "name": "Decentraland Wallet",
           "x": 132,
           "y": 44
         }

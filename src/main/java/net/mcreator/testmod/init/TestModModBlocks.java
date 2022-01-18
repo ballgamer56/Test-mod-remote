@@ -14,6 +14,7 @@ import net.mcreator.testmod.block.UniswapOreBlock;
 import net.mcreator.testmod.block.SolanaOreBlock;
 import net.mcreator.testmod.block.MiningRigBlock;
 import net.mcreator.testmod.block.MilkPlasticBlock;
+import net.mcreator.testmod.block.ExBlock;
 import net.mcreator.testmod.block.ETHOreBlock;
 import net.mcreator.testmod.block.DogeOreBlock;
 import net.mcreator.testmod.block.CryptoWorldPortalFrameBlock;
@@ -45,6 +46,7 @@ public class TestModModBlocks {
 	public static final Block UNISWAP_ORE = register(new UniswapOreBlock());
 	public static final Block ASSEMBLER_BLOCK = register(new AssemblerBlockBlock());
 	public static final Block MINING_RIG = register(new MiningRigBlock());
+	public static final Block EX = register(new ExBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

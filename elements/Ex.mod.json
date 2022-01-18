@@ -3,14 +3,14 @@
   "_type": "block",
   "definition": {
     "texture": "chipfabside",
-    "textureTop": "milkplastic",
+    "textureTop": "chipfabside",
     "textureLeft": "chipfabside",
-    "textureFront": "milkplasticside",
+    "textureFront": "chipfabside",
     "textureRight": "chipfabside",
     "textureBack": "chipfabside",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Plastic Maker",
+    "name": "Exchanger",
     "specialInfo": [],
-    "hardness": 3.5,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "DECORATIONS"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -96,7 +96,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -105,15 +105,18 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "GPUAssembler",
+    "guiBoundTo": "Binance",
     "openGUIOnRightClick": true,
-    "inventorySize": 3,
+    "inventorySize": 6,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [
       1,
-      2
+      2,
+      3,
+      4,
+      5
     ],
     "inventoryInSlotIDs": [
       0
@@ -127,10 +130,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "MilkPlasticUpdateTick"
+      "name": "MiningRigUpdateTick"
     },
     "onBlockPlayedBy": {
-      "name": "ChipFabBlockIsPlacedBy"
+      "name": "MiningRigBlockIsPlacedBy"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

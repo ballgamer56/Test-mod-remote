@@ -114,6 +114,7 @@ public class TestModModItems {
 	public static final Item SAND_WALL = register(new SANDWallItem());
 	public static final Item KUB_WALL = register(new KUBWallItem());
 	public static final Item MANA_WALLET = register(new MANAWalletItem());
+	public static final Item EX = register(TestModModBlocks.EX, CreativeModeTab.TAB_DECORATIONS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

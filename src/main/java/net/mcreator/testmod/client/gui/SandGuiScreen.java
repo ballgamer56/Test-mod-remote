@@ -69,7 +69,7 @@ public class SandGuiScreen extends AbstractContainerScreen<SandGuiMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "SAND Wallet", 6, 7, -12829636);
+		this.font.draw(poseStack, "The Sandbox Wallet", 6, 7, -12829636);
 	}
 
 	@Override

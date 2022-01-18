@@ -77,31 +77,31 @@ public class BinanceMenu extends AbstractContainerMenu implements Supplier<Map<I
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 197, 82) {
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 197, 136) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 197, 118) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 197, 154) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 197, 136) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 197, 172) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 197, 154) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 197, 190) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 197, 172) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 197, 118) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 197, 190) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

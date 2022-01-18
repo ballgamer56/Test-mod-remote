@@ -32,7 +32,7 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
           "x": 285,
-          "y": 138
+          "y": 120
         }
       },
       {
@@ -43,7 +43,7 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #2",
           "x": 285,
-          "y": 156
+          "y": 138
         }
       },
       {
@@ -54,7 +54,7 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #3",
           "x": 285,
-          "y": 174
+          "y": 156
         }
       },
       {
@@ -65,7 +65,7 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #4",
           "x": 285,
-          "y": 192
+          "y": 174
         }
       },
       {
@@ -76,7 +76,7 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #5",
           "x": 285,
-          "y": 120
+          "y": 192
         }
       },
       {
@@ -96,6 +96,9 @@
         "type": "button",
         "data": {
           "text": "Exchange",
+          "onClick": {
+            "name": "Exchange"
+          },
           "width": 67,
           "height": 20,
           "name": "Exchange",
@@ -126,13 +129,19 @@
           },
           "name": "Price",
           "x": 281,
-          "y": 41
+          "y": 54
         }
       },
       {
         "type": "button",
         "data": {
           "text": "Next",
+          "onClick": {
+            "name": "ExNext"
+          },
+          "displayCondition": {
+            "name": "ExNextButt"
+          },
           "width": 46,
           "height": 20,
           "name": "Next",
@@ -144,6 +153,12 @@
         "type": "button",
         "data": {
           "text": "Previous",
+          "onClick": {
+            "name": "ExPrev"
+          },
+          "displayCondition": {
+            "name": "ExPrevButt"
+          },
           "width": 67,
           "height": 20,
           "name": "Previous",
@@ -159,6 +174,123 @@
           "name": "trade.png",
           "x": 114,
           "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bnbpair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Pair0"
+          },
+          "name": "bnbpair.png",
+          "x": 263,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "btcpair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Pair1"
+          },
+          "name": "btcpair.png",
+          "x": 263,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "dogepair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress2"
+          },
+          "name": "dogepair.png",
+          "x": 263,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ethpair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Pair3"
+          },
+          "name": "ethpair.png",
+          "x": 263,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "kubpair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Pair4"
+          },
+          "name": "kubpair.png",
+          "x": 263,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manapair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Pair5"
+          },
+          "name": "manapair.png",
+          "x": 263,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sandpair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Pair6"
+          },
+          "name": "sandpair.png",
+          "x": 263,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "unipair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Pair7"
+          },
+          "name": "unipair.png",
+          "x": 263,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "solpair.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Pair8"
+          },
+          "name": "solpair.png",
+          "x": 263,
+          "y": 24
         }
       }
     ],

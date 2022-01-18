@@ -12,6 +12,19 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.testmod.world.inventory.BinanceMenu;
+import net.mcreator.testmod.procedures.Progress2Procedure;
+import net.mcreator.testmod.procedures.Pair8Procedure;
+import net.mcreator.testmod.procedures.Pair7Procedure;
+import net.mcreator.testmod.procedures.Pair6Procedure;
+import net.mcreator.testmod.procedures.Pair5Procedure;
+import net.mcreator.testmod.procedures.Pair4Procedure;
+import net.mcreator.testmod.procedures.Pair3Procedure;
+import net.mcreator.testmod.procedures.Pair1Procedure;
+import net.mcreator.testmod.procedures.Pair0Procedure;
+import net.mcreator.testmod.procedures.ExPrevButtProcedure;
+import net.mcreator.testmod.procedures.ExNextButtProcedure;
+import net.mcreator.testmod.network.BinanceButtonMessage;
+import net.mcreator.testmod.TestModMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -52,6 +65,42 @@ public class BinanceScreen extends AbstractContainerScreen<BinanceMenu> {
 		RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/trade.png"));
 		this.blit(ms, this.leftPos + 25, this.topPos + 27, 0, 0, 128, 96, 128, 96);
 
+		if (Pair0Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/bnbpair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
+		if (Pair1Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/btcpair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
+		if (Progress2Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/dogepair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
+		if (Pair3Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/ethpair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
+		if (Pair4Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/kubpair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
+		if (Pair5Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/manapair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
+		if (Pair6Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/sandpair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
+		if (Pair7Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/unipair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
+		if (Pair8Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/solpair.png"));
+			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -73,7 +122,7 @@ public class BinanceScreen extends AbstractContainerScreen<BinanceMenu> {
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "*not actual price", 249, 225, -1);
 		this.font.draw(poseStack, "Trading Pair", 176, 7, -12829636);
-		this.font.draw(poseStack, "Price", 192, 38, -12829636);
+		this.font.draw(poseStack, "Price", 192, 51, -12829636);
 	}
 
 	@Override
@@ -87,10 +136,34 @@ public class BinanceScreen extends AbstractContainerScreen<BinanceMenu> {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 173, this.topPos + 209, 67, 20, new TextComponent("Exchange"), e -> {
+			if (true) {
+				TestModMod.PACKET_HANDLER.sendToServer(new BinanceButtonMessage(0, x, y, z));
+				BinanceButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 121, this.topPos + 129, 46, 20, new TextComponent("Next"), e -> {
-		}));
+			if (ExNextButtProcedure.execute(world, x, y, z)) {
+				TestModMod.PACKET_HANDLER.sendToServer(new BinanceButtonMessage(1, x, y, z));
+				BinanceButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (ExNextButtProcedure.execute(world, x, y, z))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
 		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 129, 67, 20, new TextComponent("Previous"), e -> {
-		}));
+			if (ExPrevButtProcedure.execute(world, x, y, z)) {
+				TestModMod.PACKET_HANDLER.sendToServer(new BinanceButtonMessage(2, x, y, z));
+				BinanceButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (ExPrevButtProcedure.execute(world, x, y, z))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
 	}
 }

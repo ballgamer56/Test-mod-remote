@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.testmod.block.entity.MiningRigBlockEntity;
 import net.mcreator.testmod.block.entity.MilkPlasticBlockEntity;
+import net.mcreator.testmod.block.entity.ExBlockEntity;
 import net.mcreator.testmod.block.entity.ChipFabBlockEntity;
 import net.mcreator.testmod.block.entity.BasiccchipfabBlockEntity;
 import net.mcreator.testmod.block.entity.AssemblerBlockBlockEntity;
@@ -31,6 +32,7 @@ public class TestModModBlockEntities {
 	public static final BlockEntityType<?> ASSEMBLER_BLOCK = register("test_mod:assembler_block", TestModModBlocks.ASSEMBLER_BLOCK,
 			AssemblerBlockBlockEntity::new);
 	public static final BlockEntityType<?> MINING_RIG = register("test_mod:mining_rig", TestModModBlocks.MINING_RIG, MiningRigBlockEntity::new);
+	public static final BlockEntityType<?> EX = register("test_mod:ex", TestModModBlocks.EX, ExBlockEntity::new);
 
 	private static BlockEntityType<?> register(String registryname, Block block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		BlockEntityType<?> blockEntityType = BlockEntityType.Builder.of(supplier, block).build(null).setRegistryName(registryname);

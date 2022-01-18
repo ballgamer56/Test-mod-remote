@@ -30,7 +30,7 @@
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": "ambient.cave"
+      "value": "ambient.nether_wastes.loop"
     },
     "additionsSound": {
       "value": "block.fire.ambient"

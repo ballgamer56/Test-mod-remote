@@ -46,6 +46,10 @@ public class WalletScreen extends AbstractContainerScreen<WalletMenu> {
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/doge.png"));
+		this.blit(ms, this.leftPos + 78, this.topPos + -20, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 

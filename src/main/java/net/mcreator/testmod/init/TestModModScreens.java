@@ -12,7 +12,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.testmod.client.gui.WalletScreen;
+import net.mcreator.testmod.client.gui.SandGuiScreen;
 import net.mcreator.testmod.client.gui.RigGuiScreen;
+import net.mcreator.testmod.client.gui.MANAGuiScreen;
+import net.mcreator.testmod.client.gui.KUBGuiScreen;
 import net.mcreator.testmod.client.gui.GPUAssemblerScreen;
 import net.mcreator.testmod.client.gui.FabScreen;
 import net.mcreator.testmod.client.gui.ETHGuiScreen;
@@ -33,6 +36,9 @@ public class TestModModScreens {
 			MenuScreens.register(TestModModMenus.ASSEMBLER, AssemblerScreen::new);
 			MenuScreens.register(TestModModMenus.RIG_GUI, RigGuiScreen::new);
 			MenuScreens.register(TestModModMenus.BNBGUI, BnbguiScreen::new);
+			MenuScreens.register(TestModModMenus.SAND_GUI, SandGuiScreen::new);
+			MenuScreens.register(TestModModMenus.KUB_GUI, KUBGuiScreen::new);
+			MenuScreens.register(TestModModMenus.MANA_GUI, MANAGuiScreen::new);
 		});
 	}
 }

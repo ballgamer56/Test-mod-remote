@@ -22,13 +22,16 @@ import net.mcreator.testmod.item.USDT6561Item;
 import net.mcreator.testmod.item.SolanacoinItem;
 import net.mcreator.testmod.item.SiliconItem;
 import net.mcreator.testmod.item.SandcoinItem;
+import net.mcreator.testmod.item.SANDWallItem;
 import net.mcreator.testmod.item.Rigaxe2Item;
 import net.mcreator.testmod.item.PlasticItem;
 import net.mcreator.testmod.item.Picklv3Item;
 import net.mcreator.testmod.item.PickLv2Item;
 import net.mcreator.testmod.item.NextGenGPUItem;
 import net.mcreator.testmod.item.ManacoinItem;
+import net.mcreator.testmod.item.MANAWalletItem;
 import net.mcreator.testmod.item.KubcoinItem;
+import net.mcreator.testmod.item.KUBWallItem;
 import net.mcreator.testmod.item.HardwareWalletItem;
 import net.mcreator.testmod.item.GraphicPick1Item;
 import net.mcreator.testmod.item.FanItem;
@@ -108,6 +111,9 @@ public class TestModModItems {
 	public static final Item USDT_729 = register(new USDT729Item());
 	public static final Item USDT_6561 = register(new USDT6561Item());
 	public static final Item BNBWALLET = register(new BnbwalletItem());
+	public static final Item SAND_WALL = register(new SANDWallItem());
+	public static final Item KUB_WALL = register(new KUBWallItem());
+	public static final Item MANA_WALLET = register(new MANAWalletItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

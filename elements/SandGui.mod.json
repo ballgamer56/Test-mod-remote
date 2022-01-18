@@ -11,10 +11,23 @@
     "doesPauseGame": false,
     "components": [
       {
+        "type": "label",
+        "data": {
+          "text": "SAND Wallet",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "SAND Wallet",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 0,
           "disableStackInteraction": false,
@@ -28,7 +41,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 1,
           "disableStackInteraction": false,
@@ -42,7 +55,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 2,
           "disableStackInteraction": false,
@@ -56,7 +69,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 3,
           "disableStackInteraction": false,
@@ -67,23 +80,10 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "text": "BNB Wallet",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "BNB Wallet",
-          "x": 132,
-          "y": 44
-        }
-      },
-      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 4,
           "disableStackInteraction": false,
@@ -97,7 +97,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 5,
           "disableStackInteraction": false,
@@ -111,7 +111,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 6,
           "disableStackInteraction": false,
@@ -125,7 +125,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 7,
           "disableStackInteraction": false,
@@ -139,7 +139,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Sandcoin"
           },
           "id": 8,
           "disableStackInteraction": false,
@@ -152,11 +152,11 @@
       {
         "type": "image",
         "data": {
-          "image": "bnb_coin.png",
+          "image": "sand_coin.png",
           "use1Xscale": false,
-          "name": "bnb_coin.png",
-          "x": 195,
-          "y": 3
+          "name": "sand_coin.png",
+          "x": 204,
+          "y": 17
         }
       }
     ],
@@ -165,7 +165,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

@@ -11,10 +11,23 @@
     "doesPauseGame": false,
     "components": [
       {
+        "type": "label",
+        "data": {
+          "text": "Mana Wallet",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Mana Wallet",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 0,
           "disableStackInteraction": false,
@@ -28,7 +41,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 1,
           "disableStackInteraction": false,
@@ -42,7 +55,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 2,
           "disableStackInteraction": false,
@@ -56,7 +69,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 3,
           "disableStackInteraction": false,
@@ -67,23 +80,10 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "text": "BNB Wallet",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "BNB Wallet",
-          "x": 132,
-          "y": 44
-        }
-      },
-      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 4,
           "disableStackInteraction": false,
@@ -97,7 +97,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 5,
           "disableStackInteraction": false,
@@ -111,7 +111,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 6,
           "disableStackInteraction": false,
@@ -125,7 +125,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 7,
           "disableStackInteraction": false,
@@ -139,7 +139,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Manacoin"
           },
           "id": 8,
           "disableStackInteraction": false,
@@ -152,10 +152,10 @@
       {
         "type": "image",
         "data": {
-          "image": "bnb_coin.png",
+          "image": "mana.png",
           "use1Xscale": false,
-          "name": "bnb_coin.png",
-          "x": 195,
+          "name": "mana.png",
+          "x": 196,
           "y": 3
         }
       }

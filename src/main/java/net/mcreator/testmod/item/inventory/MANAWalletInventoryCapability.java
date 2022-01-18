@@ -18,18 +18,18 @@ import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.testmod.init.TestModModItems;
-import net.mcreator.testmod.client.gui.ETHGuiScreen;
+import net.mcreator.testmod.client.gui.MANAGuiScreen;
 
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
 
 @Mod.EventBusSubscriber(Dist.CLIENT)
-public class EthwalletInventoryCapability implements ICapabilitySerializable<CompoundTag> {
+public class MANAWalletInventoryCapability implements ICapabilitySerializable<CompoundTag> {
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public static void onItemDropped(ItemTossEvent event) {
-		if (event.getEntityItem().getItem().getItem() == TestModModItems.ETHWALLET) {
-			if (Minecraft.getInstance().screen instanceof ETHGuiScreen) {
+		if (event.getEntityItem().getItem().getItem() == TestModModItems.MANA_WALLET) {
+			if (Minecraft.getInstance().screen instanceof MANAGuiScreen) {
 				Minecraft.getInstance().player.closeContainer();
 			}
 		}
@@ -53,7 +53,7 @@ public class EthwalletInventoryCapability implements ICapabilitySerializable<Com
 	}
 
 	private ItemStackHandler createItemHandler() {
-		return new ItemStackHandler(34) {
+		return new ItemStackHandler(9) {
 			@Override
 			public int getSlotLimit(int slot) {
 				return 64;
@@ -61,7 +61,7 @@ public class EthwalletInventoryCapability implements ICapabilitySerializable<Com
 
 			@Override
 			public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
-				return stack.getItem() != TestModModItems.ETHWALLET;
+				return stack.getItem() != TestModModItems.MANA_WALLET;
 			}
 
 			@Override

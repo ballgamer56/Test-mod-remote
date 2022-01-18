@@ -537,6 +537,36 @@
           "x": 267,
           "y": 116
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "eth.png",
+          "use1Xscale": false,
+          "name": "eth.png",
+          "x": 87,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "7083.png",
+          "use1Xscale": false,
+          "name": "7083.png",
+          "x": 303,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "usdt_coin.png",
+          "use1Xscale": false,
+          "name": "usdt_coin.png",
+          "x": 87,
+          "y": 89
+        }
       }
     ],
     "gridSettings": {

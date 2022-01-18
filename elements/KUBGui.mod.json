@@ -11,10 +11,23 @@
     "doesPauseGame": false,
     "components": [
       {
+        "type": "label",
+        "data": {
+          "text": "Kubcoin Wallet",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Kubcoin Wallet",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 0,
           "disableStackInteraction": false,
@@ -28,7 +41,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 1,
           "disableStackInteraction": false,
@@ -42,7 +55,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 2,
           "disableStackInteraction": false,
@@ -56,7 +69,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 3,
           "disableStackInteraction": false,
@@ -67,23 +80,10 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "text": "BNB Wallet",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "BNB Wallet",
-          "x": 132,
-          "y": 44
-        }
-      },
-      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 4,
           "disableStackInteraction": false,
@@ -97,7 +97,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 5,
           "disableStackInteraction": false,
@@ -111,7 +111,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 6,
           "disableStackInteraction": false,
@@ -125,7 +125,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 7,
           "disableStackInteraction": false,
@@ -139,7 +139,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Bnbcoin"
+            "value": "CUSTOM:Kubcoin"
           },
           "id": 8,
           "disableStackInteraction": false,
@@ -152,9 +152,9 @@
       {
         "type": "image",
         "data": {
-          "image": "bnb_coin.png",
+          "image": "kub.png",
           "use1Xscale": false,
-          "name": "bnb_coin.png",
+          "name": "kub.png",
           "x": 195,
           "y": 3
         }

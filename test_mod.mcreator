@@ -1490,6 +1490,78 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ether"
+    },
+    {
+      "name": "SandGui",
+      "type": "gui",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_gui"
+    },
+    {
+      "name": "SANDWall",
+      "type": "item",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_wall"
+    },
+    {
+      "name": "KUBWall",
+      "type": "item",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kub_wall"
+    },
+    {
+      "name": "KUBGui",
+      "type": "gui",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kub_gui"
+    },
+    {
+      "name": "SandWallR",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_wall_r"
+    },
+    {
+      "name": "KUBWallR",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kub_wall_r"
+    },
+    {
+      "name": "MANAWallet",
+      "type": "item",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wallet"
+    },
+    {
+      "name": "MANAGui",
+      "type": "gui",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_gui"
+    },
+    {
+      "name": "MANAWall",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wall"
     }
   ],
   "variable_elements": [
@@ -1505,22 +1577,25 @@
     "en_us": {
       "advancements.meme_coin.descr": "It starts off as a meme, How did this thing got value?",
       "item.test_mod.usdt_9": "USDT x9",
-      "item.test_mod.crypto_world": "Gold Plated Computer Chip",
       "item.test_mod.ethwallet": "Hardware Wallet (Ethereum chain)",
+      "item.test_mod.crypto_world": "Gold Plated Computer Chip",
       "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
       "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
+      "item.test_mod.mana_wallet": "Hardware Wallet (MANA)",
+      "item.test_mod.kub_wall": "Hardware Wallet (KUB)",
       "advancements.sa_wad_dee_kub.descr": "KUB to the moon!",
       "item.test_mod.better_gpu": "GTX 1080Ti",
       "block.test_mod.uniswap_ore": "Uniswap Ore",
-      "item.test_mod.btc": "Bitcoin",
-      "block.test_mod.eth_ore": "Ether Ore",
-      "advancements.sa_wad_dee_kub.title": "Sa Wad Dee Kub",
       "advancements.meme_coin.title": "Meme Coin",
+      "advancements.sa_wad_dee_kub.title": "Sa Wad Dee Kub",
+      "block.test_mod.eth_ore": "Ether Ore",
+      "item.test_mod.btc": "Bitcoin",
       "block.test_mod.assembler_block": "Computer Component Assembler",
       "item.test_mod.dogecoin": "Dogecoin",
       "item.test_mod.usdt_81": "USDT x81",
       "item.test_mod.silicon": "Silicon",
       "item.test_mod.basicchip": "Basic Computer Chip (DIP)",
+      "item.test_mod.sand_wall": "Hardware Wallet (SAND)",
       "item.test_mod.pick_lv_2": "Crypto Mining Pickaxe Level 2",
       "block.test_mod.crypto_world_portal_frame": "Crypto World Portal Frame",
       "item.test_mod.next_gen_gpu": "RTX 3080",

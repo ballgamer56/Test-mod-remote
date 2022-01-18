@@ -50,7 +50,7 @@ public class CrypticSphereBiome {
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-3342388).waterColor(-6684724).waterFogColor(-3342388)
 				.skyColor(-3342388).foliageColorOverride(-16711936).grassColorOverride(-6710887)
-				.ambientLoopSound(new SoundEvent(new ResourceLocation("ambient.cave")))
+				.ambientLoopSound(new SoundEvent(new ResourceLocation("ambient.nether_wastes.loop")))
 				.ambientMoodSound(new AmbientMoodSettings(new SoundEvent(new ResourceLocation("entity.enderman.teleport")), 6000, 8, 2))
 				.ambientAdditionsSound(new AmbientAdditionsSettings(new SoundEvent(new ResourceLocation("block.fire.ambient")), 0.0111D))
 				.backgroundMusic(new Music(new SoundEvent(new ResourceLocation("music_disc.13")), 12000, 24000, true))

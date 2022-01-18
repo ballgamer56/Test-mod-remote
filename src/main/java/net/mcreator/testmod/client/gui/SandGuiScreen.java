@@ -9,17 +9,17 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.testmod.world.inventory.ETHGuiMenu;
+import net.mcreator.testmod.world.inventory.SandGuiMenu;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class ETHGuiScreen extends AbstractContainerScreen<ETHGuiMenu> {
+public class SandGuiScreen extends AbstractContainerScreen<SandGuiMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public ETHGuiScreen(ETHGuiMenu container, Inventory inventory, Component text) {
+	public SandGuiScreen(SandGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -27,10 +27,10 @@ public class ETHGuiScreen extends AbstractContainerScreen<ETHGuiMenu> {
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 176;
-		this.imageHeight = 227;
+		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("test_mod:textures/eth_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("test_mod:textures/sand_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -47,14 +47,8 @@ public class ETHGuiScreen extends AbstractContainerScreen<ETHGuiMenu> {
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/eth.png"));
-		this.blit(ms, this.leftPos + -38, this.topPos + 28, 0, 0, 32, 32, 32, 32);
-
-		RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/7083.png"));
-		this.blit(ms, this.leftPos + 177, this.topPos + 28, 0, 0, 32, 32, 32, 32);
-
-		RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/usdt_coin.png"));
-		this.blit(ms, this.leftPos + -38, this.topPos + 82, 0, 0, 32, 32, 32, 32);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/sand_coin.png"));
+		this.blit(ms, this.leftPos + 78, this.topPos + -20, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -75,10 +69,7 @@ public class ETHGuiScreen extends AbstractContainerScreen<ETHGuiMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Ethereum Wallet", 6, 10, -12829636);
-		this.font.draw(poseStack, "ETH", 6, 28, -12829636);
-		this.font.draw(poseStack, "Uniswap", 96, 28, -12829636);
-		this.font.draw(poseStack, "USDT", 6, 64, -12829636);
+		this.font.draw(poseStack, "SAND Wallet", 6, 7, -12829636);
 	}
 
 	@Override

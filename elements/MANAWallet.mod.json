@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "wallet",
     "customModelName": "Normal",
-    "name": "Hardware Wallet (Ethereum chain)",
+    "name": "Hardware Wallet (MANA)",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "TOOLS"
@@ -26,8 +26,8 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "ETHGui",
-    "inventorySize": 34,
+    "guiBoundTo": "MANAGui",
+    "inventorySize": 9,
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false
   }

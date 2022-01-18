@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "test_mod:dogecoin"
+      "item": "test_mod:graphic_pick_1"
     },
     "title": {
-      "translate": "advancements.meme_coin.title"
+      "translate": "advancements.rig_advancement.title"
     },
     "description": {
-      "translate": "advancements.meme_coin.descr"
+      "translate": "advancements.rig_advancement.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "meme_coin": {
+    "rig_advancement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "test_mod:dogecoin"
+              "test_mod:assembler_block"
             ],
             "count": {
               "min": 1,
@@ -31,12 +31,6 @@
         ]
       }
     }
-  },
-  "rewards": {
-    "experience": 0,
-    "recipes": [
-      "test_mod:d_wallet"
-    ]
   },
   "parent": "test_mod:crypto_start"
 }

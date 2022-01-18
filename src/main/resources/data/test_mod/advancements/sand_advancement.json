@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "test_mod:dogecoin"
+      "item": "test_mod:sandcoin"
     },
     "title": {
-      "translate": "advancements.meme_coin.title"
+      "translate": "advancements.sand_advancement.title"
     },
     "description": {
-      "translate": "advancements.meme_coin.descr"
+      "translate": "advancements.sand_advancement.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "meme_coin": {
+    "sand_advancement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "test_mod:dogecoin"
+              "test_mod:sandcoin"
             ],
             "count": {
               "min": 1,
@@ -35,7 +35,7 @@
   "rewards": {
     "experience": 0,
     "recipes": [
-      "test_mod:d_wallet"
+      "test_mod:sand_wall_r"
     ]
   },
   "parent": "test_mod:crypto_start"

@@ -36,7 +36,11 @@
     "experience": 0,
     "recipes": [
       "test_mod:chip_fab_recipe",
-      "test_mod:chip_ass_rec"
+      "test_mod:chip_ass_rec",
+      "test_mod:fancraft",
+      "test_mod:cpucraft",
+      "test_mod:plastic_milk_recipe",
+      "test_mod:boardrecipe"
     ]
   },
   "parent": "test_mod:crypto_start"

@@ -2009,6 +2009,62 @@
           }
         ]
       }
+    },
+    {
+      "name": "SandAdvancement",
+      "type": "achievement",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_advancement"
+    },
+    {
+      "name": "RigAdvancement",
+      "type": "achievement",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rig_advancement"
+    },
+    {
+      "name": "BasicGPUAdvancment",
+      "type": "achievement",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_gpu_advancment"
+    },
+    {
+      "name": "BetterGPUAdvancement",
+      "type": "achievement",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_gpu_advancement"
+    },
+    {
+      "name": "AdvGPUAdvancement",
+      "type": "achievement",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_gpu_advancement"
+    },
+    {
+      "name": "NGGPUAdvancement",
+      "type": "achievement",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nggpu_advancement"
+    },
+    {
+      "name": "UniAdvancement",
+      "type": "achievement",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uni_advancement"
     }
   ],
   "variable_elements": [
@@ -2023,11 +2079,12 @@
   "language_map": {
     "en_us": {
       "advancements.meme_coin.descr": "It starts off as a meme, How did this thing got value?",
+      "advancements.basic_gpu_advancment.title": "The ol\u0027 reliable",
       "item.test_mod.usdt_9": "USDT x9",
       "item.test_mod.ethwallet": "Hardware Wallet (Ethereum chain)",
       "item.test_mod.crypto_world": "Gold Plated Computer Chip",
-      "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
       "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
+      "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
       "item.test_mod.mana_wallet": "Hardware Wallet (MANA)",
       "item.test_mod.kub_wall": "Hardware Wallet (KUB)",
       "advancements.sa_wad_dee_kub.descr": "KUB to the moon!",
@@ -2039,6 +2096,7 @@
       "item.test_mod.btc": "Bitcoin",
       "block.test_mod.assembler_block": "Computer Component Assembler",
       "item.test_mod.dogecoin": "Dogecoin",
+      "advancements.basic_gpu_advancment.descr": "Trust me, this thing can run any game",
       "item.test_mod.usdt_81": "USDT x81",
       "item.test_mod.silicon": "Silicon",
       "item.test_mod.basicchip": "Basic Computer Chip (DIP)",
@@ -2046,6 +2104,7 @@
       "item.test_mod.pick_lv_2": "Crypto Mining Pickaxe Level 2",
       "block.test_mod.crypto_world_portal_frame": "Crypto World Portal Frame",
       "item.test_mod.next_gen_gpu": "RTX 3080",
+      "advancements.rig_advancement.descr": "Why go into the dimension and mine for coin when you can sit still and let a machine do it for you!",
       "block.test_mod.milk_plastic": "Plastic Maker",
       "item.test_mod.better_chip": "Better Computer Chip (DIP)",
       "block.test_mod.doge_ore": "Doge Ore",
@@ -2060,14 +2119,19 @@
       "block.test_mod.chip_fab": "Chip Fabricator",
       "item.test_mod.fab_chip": "Fabricated Chip Die",
       "item.test_mod.basic_gpu": "Geforce 750Ti",
+      "advancements.adv_gpu_advancement.title": "The hype though...",
       "item.test_mod.hardware_wallet": "Hardware Wallet (Dogecoin)",
       "block.test_mod.mining_rig": "Mining Rig",
       "item.test_mod.usdt_729": "USDT x729",
+      "advancements.better_gpu_advancement.descr": "Back in the day, this was the best... Now it\u0027s obsolete",
       "item.test_mod.rigaxe_2": "Crypto Mining Rigaxe Level 2",
       "item.test_mod.coolant_bucket": "Cryptic Water Bucket",
       "block.test_mod.ex": "Exchanger",
+      "advancements.sand_advancement.descr": "Despite thet name, it\u0027s not made out of sand",
       "item.test_mod.kubcoin": "Kubcoin",
       "item.test_mod.bnbwallet": "Hardware Wallet (BNB)",
+      "advancements.nggpu_advancement.title": "The absolute",
+      "advancements.nggpu_advancement.descr": "\"I got this for a high price, that\u0027s why I\u0027m selling it to you at this price\" Yeah... right...",
       "advancements.crypto_start.title": "Virtual Miner",
       "item.test_mod.crypto_mining_pickaxe": "Crypto Mining Pickaxe Level 1",
       "advancements.silicon_advancement.title": "Chip recipe!",
@@ -2075,10 +2139,14 @@
       "item.test_mod.bnbcoin": "BNB",
       "biome.test_mod.cryptic_sphere": "Cryptic Sphere",
       "item.test_mod.usdtcoin": "Tether",
+      "advancements.better_gpu_advancement.title": "An Upgrade",
       "item.test_mod.cchip_3": "Basic Computer Chip (TSOP)",
       "item.test_mod.fan": "Fan",
+      "advancements.sand_advancement.title": "The Sandbox",
       "block.test_mod.crypt_stone": "Crypt Stone",
       "item.test_mod.cchip_4": "Better Computer Chip (TSOP)",
+      "advancements.uni_advancement.title": "A Unicorn!",
+      "advancements.uni_advancement.descr": "Wait no, nevermind. it\u0027s just another coin",
       "block.test_mod.btc_ore": "Bitcoin Ore",
       "item.test_mod.advance_gpu": "RTX 2060",
       "item.test_mod.uniswapcoin": "Uniswapcoin",
@@ -2089,7 +2157,9 @@
       "advancements.ether.descr": "Time to think about smart contract!",
       "advancements.btc_advancement.descr": "Obtain Bitcoin",
       "block.test_mod.solana_ore": "Solana Ore",
+      "advancements.rig_advancement.title": "Virtually Mining... Virtually!",
       "item.test_mod.sandcoin": "The Sandbox",
+      "advancements.adv_gpu_advancement.descr": "Huge leap of Graphic technology, too bad it\u0027s hard to find and buy one",
       "item.test_mod.ethereum": "Ethereum",
       "item.test_mod.plastic": "Plastic",
       "item.test_mod.board": "Computer Motherboard"

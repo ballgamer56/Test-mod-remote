@@ -32,5 +32,11 @@
       }
     }
   },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "test_mod:kub_wall_r"
+    ]
+  },
   "parent": "test_mod:crypto_start"
 }

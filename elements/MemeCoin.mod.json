@@ -13,7 +13,9 @@
     "announceToChat": true,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
-    "rewardRecipes": [],
+    "rewardRecipes": [
+      "DWallet"
+    ],
     "rewardFunction": "No function",
     "rewardXP": 0,
     "achievementType": "task",

@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "test_mod:dogecoin"
+      "item": "test_mod:better_gpu"
     },
     "title": {
-      "translate": "advancements.meme_coin.title"
+      "translate": "advancements.better_gpu_advancement.title"
     },
     "description": {
-      "translate": "advancements.meme_coin.descr"
+      "translate": "advancements.better_gpu_advancement.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "meme_coin": {
+    "better_gpu_advancement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "test_mod:dogecoin"
+              "test_mod:better_gpu"
             ],
             "count": {
               "min": 1,
@@ -35,8 +35,9 @@
   "rewards": {
     "experience": 0,
     "recipes": [
-      "test_mod:d_wallet"
+      "test_mod:rig_2",
+      "test_mod:rig_recipe"
     ]
   },
-  "parent": "test_mod:crypto_start"
+  "parent": "test_mod:basic_gpu_advancment"
 }

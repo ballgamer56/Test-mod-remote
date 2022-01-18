@@ -15,7 +15,11 @@
     "rewardLoot": [],
     "rewardRecipes": [
       "ChipFabRecipe",
-      "ChipAssRec"
+      "ChipAssRec",
+      "Fancraft",
+      "Cpucraft",
+      "PlasticMilkRecipe",
+      "Boardrecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,

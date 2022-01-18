@@ -1,0 +1,28 @@
+{
+  "_fv": 24,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "An Upgrade",
+    "achievementDescription": "Back in the day, this was the best... Now it's obsolete",
+    "achievementIcon": {
+      "value": "CUSTOM:BetterGPU"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "Rig2",
+      "RigRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:BasicGPUAdvancment"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"45\" y=\"21\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">64</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:BetterGPU</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

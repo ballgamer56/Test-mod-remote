@@ -75,7 +75,7 @@ public class CryptoWorldDimension {
 		double z = entity.getZ();
 		if (event.getTo() == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("test_mod:crypto_world"))) {
 
-			CryptoWorldPlayerEntersDimensionProcedure.execute(entity);
+			CryptoWorldPlayerEntersDimensionProcedure.execute(world, entity);
 		}
 	}
 }

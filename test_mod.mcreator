@@ -106,6 +106,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1318,6 +1322,174 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "assembler_recipe"
+    },
+    {
+      "name": "USDT9",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_9"
+    },
+    {
+      "name": "USDT81",
+      "type": "item",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_81"
+    },
+    {
+      "name": "USDT729",
+      "type": "item",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_729"
+    },
+    {
+      "name": "USDT6561",
+      "type": "item",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_6561"
+    },
+    {
+      "name": "Usdt9Recipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_9_recipe"
+    },
+    {
+      "name": "Usdt81Recipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_81_recipe"
+    },
+    {
+      "name": "Usdt729Recipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_729_recipe"
+    },
+    {
+      "name": "Usdt6561Recipe",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_6561_recipe"
+    },
+    {
+      "name": "RUsdt729",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "r_usdt_729"
+    },
+    {
+      "name": "RUsdt81",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "r_usdt_81"
+    },
+    {
+      "name": "RUsdt9",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "r_usdt_9"
+    },
+    {
+      "name": "USDTRecipr",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_recipr"
+    },
+    {
+      "name": "Bnbwallet",
+      "type": "item",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnbwallet"
+    },
+    {
+      "name": "Bnbgui",
+      "type": "gui",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnbgui"
+    },
+    {
+      "name": "Bnbwall",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnbwall"
+    },
+    {
+      "name": "VirtualDollar",
+      "type": "achievement",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virtual_dollar"
+    },
+    {
+      "name": "SaWadDeeKub",
+      "type": "achievement",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sa_wad_dee_kub"
+    },
+    {
+      "name": "BTCAdvancement",
+      "type": "achievement",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "btc_advancement"
+    },
+    {
+      "name": "MemeCoin",
+      "type": "achievement",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meme_coin"
+    },
+    {
+      "name": "SiliconAdvancement",
+      "type": "achievement",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon_advancement"
+    },
+    {
+      "name": "Ether",
+      "type": "achievement",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ether"
     }
   ],
   "variable_elements": [
@@ -1331,16 +1503,22 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.meme_coin.descr": "It starts off as a meme, How did this thing got value?",
+      "item.test_mod.usdt_9": "USDT x9",
       "item.test_mod.crypto_world": "Gold Plated Computer Chip",
-      "item.test_mod.ethwallet": "Hardware Wallet (Ethereum)",
+      "item.test_mod.ethwallet": "Hardware Wallet (Ethereum chain)",
       "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
       "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
+      "advancements.sa_wad_dee_kub.descr": "KUB to the moon!",
       "item.test_mod.better_gpu": "GTX 1080Ti",
       "block.test_mod.uniswap_ore": "Uniswap Ore",
       "item.test_mod.btc": "Bitcoin",
       "block.test_mod.eth_ore": "Ether Ore",
+      "advancements.sa_wad_dee_kub.title": "Sa Wad Dee Kub",
+      "advancements.meme_coin.title": "Meme Coin",
       "block.test_mod.assembler_block": "Computer Component Assembler",
       "item.test_mod.dogecoin": "Dogecoin",
+      "item.test_mod.usdt_81": "USDT x81",
       "item.test_mod.silicon": "Silicon",
       "item.test_mod.basicchip": "Basic Computer Chip (DIP)",
       "item.test_mod.pick_lv_2": "Crypto Mining Pickaxe Level 2",
@@ -1349,7 +1527,11 @@
       "block.test_mod.milk_plastic": "Plastic Maker",
       "item.test_mod.better_chip": "Better Computer Chip (DIP)",
       "block.test_mod.doge_ore": "Doge Ore",
+      "item.test_mod.usdt_6561": "USDT x6561",
+      "advancements.virtual_dollar.title": "Virtual Dollar",
       "item.test_mod.cpu": "Regular Socketed CPU",
+      "advancements.btc_advancement.title": "One that start it all!",
+      "advancements.ether.title": "Ethereum",
       "block.test_mod.coolant": "Cryptic Water",
       "item.test_mod.manacoin": "MANA",
       "item.test_mod.solanacoin": "Solana",
@@ -1358,11 +1540,14 @@
       "item.test_mod.basic_gpu": "Geforce 750Ti",
       "item.test_mod.hardware_wallet": "Hardware Wallet (Dogecoin)",
       "block.test_mod.mining_rig": "Mining Rig",
+      "item.test_mod.usdt_729": "USDT x729",
       "item.test_mod.rigaxe_2": "Crypto Mining Rigaxe Level 2",
       "item.test_mod.coolant_bucket": "Cryptic Water Bucket",
       "item.test_mod.kubcoin": "KUB",
+      "item.test_mod.bnbwallet": "Hardware Wallet (BNB)",
       "advancements.crypto_start.title": "Virtual Miner",
       "item.test_mod.crypto_mining_pickaxe": "Crypto Mining Pickaxe Level 1",
+      "advancements.silicon_advancement.title": "Chip recipe!",
       "advancements.crypto_start.descr": "Entered the world of crypto mining",
       "item.test_mod.bnbcoin": "BNB",
       "biome.test_mod.cryptic_sphere": "Cryptic Sphere",
@@ -1376,6 +1561,10 @@
       "item.test_mod.uniswapcoin": "Uniswapcoin",
       "block.test_mod.basiccchipfab": "Chip Assembler",
       "fluid.test_mod.coolant": "Cryptic Water",
+      "advancements.silicon_advancement.descr": "No... not that chip",
+      "advancements.virtual_dollar.descr": "The US Dollar, On BLockchain!",
+      "advancements.ether.descr": "Time to think about smart contract!",
+      "advancements.btc_advancement.descr": "Obtain Bitcoin",
       "block.test_mod.solana_ore": "Solana Ore",
       "item.test_mod.sandcoin": "SAND",
       "item.test_mod.ethereum": "Ethereum",

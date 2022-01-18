@@ -53,7 +53,7 @@ public class HardwareWalletInventoryCapability implements ICapabilitySerializabl
 	}
 
 	private ItemStackHandler createItemHandler() {
-		return new ItemStackHandler(4) {
+		return new ItemStackHandler(18) {
 			@Override
 			public int getSlotLimit(int slot) {
 				return 64;

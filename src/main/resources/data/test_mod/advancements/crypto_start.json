@@ -16,9 +16,9 @@
   },
   "criteria": {
     "crypto_start": {
-      "trigger": "minecraft:changed_dimension",
+      "trigger": "minecraft:location",
       "conditions": {
-        "to": "test_mod:crypto_world"
+        "biome": "test_mod:cryptic_sphere"
       }
     }
   },

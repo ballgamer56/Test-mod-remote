@@ -38,7 +38,7 @@ public class WalletMenu extends AbstractContainerMenu implements Supplier<Map<In
 		super(TestModModMenus.WALLET, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(4);
+		this.internal = new ItemStackHandler(18);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -76,25 +76,109 @@ public class WalletMenu extends AbstractContainerMenu implements Supplier<Map<In
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 26) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 26) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (TestModModItems.DOGECOIN == stack.getItem());
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 34, 26) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 26) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (TestModModItems.DOGECOIN == stack.getItem());
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 52, 26) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 26) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (TestModModItems.DOGECOIN == stack.getItem());
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 70, 26) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 26) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 26) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 26) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 115, 26) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 26) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 26) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 7, 44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 25, 44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 43, 44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 61, 44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 79, 44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 97, 44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 115, 44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 133, 44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.DOGECOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 151, 44) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (TestModModItems.DOGECOIN == stack.getItem());
@@ -119,18 +203,18 @@ public class WalletMenu extends AbstractContainerMenu implements Supplier<Map<In
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 4) {
-				if (!this.moveItemStackTo(itemstack1, 4, this.slots.size(), true)) {
+			if (index < 18) {
+				if (!this.moveItemStackTo(itemstack1, 18, this.slots.size(), true)) {
 					return ItemStack.EMPTY;
 				}
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 4, false)) {
-				if (index < 4 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 4 + 27, this.slots.size(), true)) {
+			} else if (!this.moveItemStackTo(itemstack1, 0, 18, false)) {
+				if (index < 18 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 18 + 27, this.slots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 4, 4 + 27, false)) {
+					if (!this.moveItemStackTo(itemstack1, 18, 18 + 27, false)) {
 						return ItemStack.EMPTY;
 					}
 				}

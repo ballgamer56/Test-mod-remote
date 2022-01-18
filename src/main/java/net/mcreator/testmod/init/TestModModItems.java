@@ -15,6 +15,10 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.testmod.item.UsdtcoinItem;
 import net.mcreator.testmod.item.UniswapcoinItem;
+import net.mcreator.testmod.item.USDT9Item;
+import net.mcreator.testmod.item.USDT81Item;
+import net.mcreator.testmod.item.USDT729Item;
+import net.mcreator.testmod.item.USDT6561Item;
 import net.mcreator.testmod.item.SolanacoinItem;
 import net.mcreator.testmod.item.SiliconItem;
 import net.mcreator.testmod.item.SandcoinItem;
@@ -39,6 +43,7 @@ import net.mcreator.testmod.item.CoolantItem;
 import net.mcreator.testmod.item.Cchip4Item;
 import net.mcreator.testmod.item.Cchip3Item;
 import net.mcreator.testmod.item.BoardItem;
+import net.mcreator.testmod.item.BnbwalletItem;
 import net.mcreator.testmod.item.BnbcoinItem;
 import net.mcreator.testmod.item.BetterGPUItem;
 import net.mcreator.testmod.item.BetterChipItem;
@@ -98,6 +103,11 @@ public class TestModModItems {
 	public static final Item ADVANCE_GPU = register(new AdvanceGPUItem());
 	public static final Item NEXT_GEN_GPU = register(new NextGenGPUItem());
 	public static final Item BOARD = register(new BoardItem());
+	public static final Item USDT_9 = register(new USDT9Item());
+	public static final Item USDT_81 = register(new USDT81Item());
+	public static final Item USDT_729 = register(new USDT729Item());
+	public static final Item USDT_6561 = register(new USDT6561Item());
+	public static final Item BNBWALLET = register(new BnbwalletItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

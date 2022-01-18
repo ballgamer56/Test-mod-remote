@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "test_mod:usdtcoin"
+    },
+    "1": {
+      "item": "test_mod:usdtcoin"
+    },
+    "2": {
+      "item": "test_mod:usdtcoin"
+    },
+    "3": {
+      "item": "test_mod:usdtcoin"
+    },
+    "4": {
+      "item": "test_mod:usdtcoin"
+    },
+    "5": {
+      "item": "test_mod:usdtcoin"
+    },
+    "6": {
+      "item": "test_mod:usdtcoin"
+    },
+    "7": {
+      "item": "test_mod:usdtcoin"
+    },
+    "8": {
+      "item": "test_mod:usdtcoin"
+    }
+  },
+  "result": {
+    "item": "test_mod:usdt_9",
+    "count": 1
+  }
+}

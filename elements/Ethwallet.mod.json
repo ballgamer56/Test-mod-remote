@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "wallet",
     "customModelName": "Normal",
-    "name": "Hardware Wallet (Ethereum)",
+    "name": "Hardware Wallet (Ethereum chain)",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "TOOLS"
@@ -26,8 +26,8 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "Wallet",
-    "inventorySize": 4,
+    "guiBoundTo": "ETHGui",
+    "inventorySize": 26,
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false
   }

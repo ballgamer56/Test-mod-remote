@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "test_mod:dogecoin"
+    },
+    "title": {
+      "translate": "advancements.meme_coin.title"
+    },
+    "description": {
+      "translate": "advancements.meme_coin.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "meme_coin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "test_mod:dogecoin"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "test_mod:crypto_start"
+}

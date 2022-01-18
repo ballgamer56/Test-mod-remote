@@ -23,7 +23,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.testmod.world.inventory.WalletMenu;
+import net.mcreator.testmod.world.inventory.ETHGuiMenu;
 import net.mcreator.testmod.item.inventory.EthwalletInventoryCapability;
 
 import javax.annotation.Nullable;
@@ -52,7 +52,7 @@ public class EthwalletItem extends Item {
 			NetworkHooks.openGui(serverPlayer, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return new TextComponent("Hardware Wallet (Ethereum)");
+					return new TextComponent("Hardware Wallet (Ethereum chain)");
 				}
 
 				@Override
@@ -60,7 +60,7 @@ public class EthwalletItem extends Item {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new WalletMenu(id, inventory, packetBuffer);
+					return new ETHGuiMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());

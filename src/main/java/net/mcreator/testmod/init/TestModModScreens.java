@@ -16,6 +16,7 @@ import net.mcreator.testmod.client.gui.RigGuiScreen;
 import net.mcreator.testmod.client.gui.GPUAssemblerScreen;
 import net.mcreator.testmod.client.gui.FabScreen;
 import net.mcreator.testmod.client.gui.ETHGuiScreen;
+import net.mcreator.testmod.client.gui.BnbguiScreen;
 import net.mcreator.testmod.client.gui.BasicCFabScreen;
 import net.mcreator.testmod.client.gui.AssemblerScreen;
 
@@ -31,6 +32,7 @@ public class TestModModScreens {
 			MenuScreens.register(TestModModMenus.PLASTICMAKER, GPUAssemblerScreen::new);
 			MenuScreens.register(TestModModMenus.ASSEMBLER, AssemblerScreen::new);
 			MenuScreens.register(TestModModMenus.RIG_GUI, RigGuiScreen::new);
+			MenuScreens.register(TestModModMenus.BNBGUI, BnbguiScreen::new);
 		});
 	}
 }

@@ -27,7 +27,7 @@
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "Wallet",
-    "inventorySize": 4,
+    "inventorySize": 18,
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false
   }

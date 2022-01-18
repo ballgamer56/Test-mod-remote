@@ -40,6 +40,6 @@
     "parent": {
       "value": "story/mine_stone"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"147\" y=\"115\"><field name=\"dimension\">CUSTOM:CryptoWorld</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"biome_entered\" x=\"158\" y=\"89\"><field name=\"biome\">CUSTOM:CrypticSphere</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

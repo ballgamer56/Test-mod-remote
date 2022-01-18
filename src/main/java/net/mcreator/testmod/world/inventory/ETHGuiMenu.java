@@ -38,7 +38,7 @@ public class ETHGuiMenu extends AbstractContainerMenu implements Supplier<Map<In
 		super(TestModModMenus.ETH_GUI, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(4);
+		this.internal = new ItemStackHandler(34);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -76,35 +76,215 @@ public class ETHGuiMenu extends AbstractContainerMenu implements Supplier<Map<In
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 26) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 38) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (TestModModItems.ETHEREUM == stack.getItem());
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 34, 26) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 38) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (TestModModItems.ETHEREUM == stack.getItem());
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 52, 26) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 38) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (TestModModItems.ETHEREUM == stack.getItem());
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 70, 26) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 38) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (TestModModItems.ETHEREUM == stack.getItem());
+			}
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 97, 38) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.UNISWAPCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 115, 38) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.UNISWAPCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 133, 38) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.UNISWAPCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 151, 38) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.UNISWAPCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 7, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 25, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 43, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 61, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 79, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 97, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 115, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 133, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 151, 74) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDTCOIN == stack.getItem());
+			}
+		}));
+		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 7, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_9 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 25, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_9 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 43, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_9 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 61, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_9 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 79, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_81 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 97, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_81 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 115, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_81 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 133, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_729 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 151, 92) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 16, 110) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 34, 110) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 52, 110) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 70, 110) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 88, 110) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 106, 110) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 124, 110) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
+			}
+		}));
+		this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 142, 110) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (TestModModItems.USDT_6561 == stack.getItem());
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 61 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 61 + 142));
 	}
 
 	@Override
@@ -119,18 +299,18 @@ public class ETHGuiMenu extends AbstractContainerMenu implements Supplier<Map<In
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 4) {
-				if (!this.moveItemStackTo(itemstack1, 4, this.slots.size(), true)) {
+			if (index < 34) {
+				if (!this.moveItemStackTo(itemstack1, 34, this.slots.size(), true)) {
 					return ItemStack.EMPTY;
 				}
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 4, false)) {
-				if (index < 4 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 4 + 27, this.slots.size(), true)) {
+			} else if (!this.moveItemStackTo(itemstack1, 0, 34, false)) {
+				if (index < 34 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 34 + 27, this.slots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 4, 4 + 27, false)) {
+					if (!this.moveItemStackTo(itemstack1, 34, 34 + 27, false)) {
 						return ItemStack.EMPTY;
 					}
 				}

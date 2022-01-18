@@ -18,7 +18,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.testmod.init.TestModModItems;
-import net.mcreator.testmod.client.gui.WalletScreen;
+import net.mcreator.testmod.client.gui.ETHGuiScreen;
 
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
@@ -29,7 +29,7 @@ public class EthwalletInventoryCapability implements ICapabilitySerializable<Com
 	@OnlyIn(Dist.CLIENT)
 	public static void onItemDropped(ItemTossEvent event) {
 		if (event.getEntityItem().getItem().getItem() == TestModModItems.ETHWALLET) {
-			if (Minecraft.getInstance().screen instanceof WalletScreen) {
+			if (Minecraft.getInstance().screen instanceof ETHGuiScreen) {
 				Minecraft.getInstance().player.closeContainer();
 			}
 		}
@@ -53,7 +53,7 @@ public class EthwalletInventoryCapability implements ICapabilitySerializable<Com
 	}
 
 	private ItemStackHandler createItemHandler() {
-		return new ItemStackHandler(4) {
+		return new ItemStackHandler(26) {
 			@Override
 			public int getSlotLimit(int slot) {
 				return 64;

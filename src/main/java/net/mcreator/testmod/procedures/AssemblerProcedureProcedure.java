@@ -1,13 +1,17 @@
 package net.mcreator.testmod.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.CapabilityItemHandler;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.testmod.init.TestModModItems;
@@ -669,6 +673,15 @@ public class AssemblerProcedureProcedure {
 					});
 				}
 			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, (float) 0.25, 2);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS,
+							(float) 0.25, 2, false);
+				}
+			}
 		}
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
@@ -1318,6 +1331,15 @@ public class AssemblerProcedureProcedure {
 							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 						}
 					});
+				}
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, (float) 0.25, 2);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS,
+							(float) 0.25, 2, false);
 				}
 			}
 		}
@@ -1971,6 +1993,15 @@ public class AssemblerProcedureProcedure {
 					});
 				}
 			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, (float) 0.25, 2);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS,
+							(float) 0.25, 2, false);
+				}
+			}
 		}
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
@@ -2620,6 +2651,15 @@ public class AssemblerProcedureProcedure {
 							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 						}
 					});
+				}
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, (float) 0.25, 2);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS,
+							(float) 0.25, 2, false);
 				}
 			}
 		}

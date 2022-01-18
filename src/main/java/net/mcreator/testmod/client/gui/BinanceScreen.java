@@ -12,17 +12,15 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.testmod.world.inventory.BinanceMenu;
-import net.mcreator.testmod.procedures.Progress2Procedure;
 import net.mcreator.testmod.procedures.Pair8Procedure;
 import net.mcreator.testmod.procedures.Pair7Procedure;
 import net.mcreator.testmod.procedures.Pair6Procedure;
 import net.mcreator.testmod.procedures.Pair5Procedure;
 import net.mcreator.testmod.procedures.Pair4Procedure;
 import net.mcreator.testmod.procedures.Pair3Procedure;
+import net.mcreator.testmod.procedures.Pair2Procedure;
 import net.mcreator.testmod.procedures.Pair1Procedure;
 import net.mcreator.testmod.procedures.Pair0Procedure;
-import net.mcreator.testmod.procedures.ExPrevButtProcedure;
-import net.mcreator.testmod.procedures.ExNextButtProcedure;
 import net.mcreator.testmod.network.BinanceButtonMessage;
 import net.mcreator.testmod.TestModMod;
 
@@ -73,7 +71,7 @@ public class BinanceScreen extends AbstractContainerScreen<BinanceMenu> {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/btcpair.png"));
 			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
 		}
-		if (Progress2Procedure.execute(world, x, y, z)) {
+		if (Pair2Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("test_mod:textures/dogepair.png"));
 			this.blit(ms, this.leftPos + 174, this.topPos + 21, 0, 0, 64, 24, 64, 24);
 		}
@@ -142,28 +140,16 @@ public class BinanceScreen extends AbstractContainerScreen<BinanceMenu> {
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 121, this.topPos + 129, 46, 20, new TextComponent("Next"), e -> {
-			if (ExNextButtProcedure.execute(world, x, y, z)) {
+			if (true) {
 				TestModMod.PACKET_HANDLER.sendToServer(new BinanceButtonMessage(1, x, y, z));
 				BinanceButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (ExNextButtProcedure.execute(world, x, y, z))
-					super.render(ms, gx, gy, ticks);
-			}
-		});
+		}));
 		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 129, 67, 20, new TextComponent("Previous"), e -> {
-			if (ExPrevButtProcedure.execute(world, x, y, z)) {
+			if (true) {
 				TestModMod.PACKET_HANDLER.sendToServer(new BinanceButtonMessage(2, x, y, z));
 				BinanceButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (ExPrevButtProcedure.execute(world, x, y, z))
-					super.render(ms, gx, gy, ticks);
-			}
-		});
+		}));
 	}
 }

@@ -858,7 +858,7 @@ public class ExchangeProcedure {
 				}
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 1) >= 4 && ((new Object() {
+		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 0) >= 4 && ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -896,7 +896,7 @@ public class ExchangeProcedure {
 				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
 					final int _sltid = 0;
-					final int _amount = 1;
+					final int _amount = 4;
 					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 						if (capability instanceof IItemHandlerModifiable) {
 							ItemStack _stk = capability.getStackInSlot(_sltid).copy();
@@ -2350,7 +2350,7 @@ public class ExchangeProcedure {
 					BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
 					if (_ent != null) {
 						final int _sltid = 3;
-						final ItemStack _setstack = new ItemStack(TestModModItems.USDTCOIN);
+						final ItemStack _setstack = new ItemStack(TestModModItems.USDT_81);
 						_setstack.setCount(3);
 						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {

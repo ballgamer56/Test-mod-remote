@@ -139,9 +139,6 @@
           "onClick": {
             "name": "ExNext"
           },
-          "displayCondition": {
-            "name": "ExNextButt"
-          },
           "width": 46,
           "height": 20,
           "name": "Next",
@@ -155,9 +152,6 @@
           "text": "Previous",
           "onClick": {
             "name": "ExPrev"
-          },
-          "displayCondition": {
-            "name": "ExPrevButt"
           },
           "width": 67,
           "height": 20,
@@ -208,7 +202,7 @@
           "image": "dogepair.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "Progress2"
+            "name": "Pair2"
           },
           "name": "dogepair.png",
           "x": 263,

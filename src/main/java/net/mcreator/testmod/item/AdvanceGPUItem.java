@@ -8,7 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 
 public class AdvanceGPUItem extends Item {
 	public AdvanceGPUItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(500).rarity(Rarity.RARE));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(1000).rarity(Rarity.RARE));
 		setRegistryName("advance_gpu");
 	}
 

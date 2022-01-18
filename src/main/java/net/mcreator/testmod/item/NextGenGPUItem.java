@@ -8,7 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 
 public class NextGenGPUItem extends Item {
 	public NextGenGPUItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(500).rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(2500).rarity(Rarity.EPIC));
 		setRegistryName("next_gen_gpu");
 	}
 

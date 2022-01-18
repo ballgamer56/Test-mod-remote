@@ -1,5 +1,6 @@
 package net.mcreator.testmod.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.CapabilityItemHandler;
 
@@ -9,6 +10,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.testmod.init.TestModModItems;
@@ -815,6 +818,16 @@ public class MiningRigUpdateTickProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")), SoundSource.BLOCKS,
+									(float) 0.25, 2);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")),
+									SoundSource.BLOCKS, (float) 0.25, 2, false);
+						}
+					}
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -913,6 +926,16 @@ public class MiningRigUpdateTickProcedure {
 							_blockEntity.getTileData().putDouble("progress", 0);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")), SoundSource.BLOCKS,
+									(float) 0.25, 2);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")),
+									SoundSource.BLOCKS, (float) 0.25, 2, false);
+						}
 					}
 				}
 			} else if (new Object() {
@@ -1013,6 +1036,16 @@ public class MiningRigUpdateTickProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")), SoundSource.BLOCKS,
+									(float) 0.25, 2);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")),
+									SoundSource.BLOCKS, (float) 0.25, 2, false);
+						}
+					}
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -1112,6 +1145,16 @@ public class MiningRigUpdateTickProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")), SoundSource.BLOCKS,
+									(float) 0.25, 2);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")),
+									SoundSource.BLOCKS, (float) 0.25, 2, false);
+						}
+					}
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -1210,6 +1253,16 @@ public class MiningRigUpdateTickProcedure {
 							_blockEntity.getTileData().putDouble("progress", 0);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")), SoundSource.BLOCKS,
+									(float) 0.25, 2);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")),
+									SoundSource.BLOCKS, (float) 0.25, 2, false);
+						}
 					}
 				}
 			}
@@ -1327,6 +1380,168 @@ public class MiningRigUpdateTickProcedure {
 						});
 					}
 				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")), SoundSource.BLOCKS, (float) 0.25,
+								2);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bit")),
+								SoundSource.BLOCKS, (float) 0.25, 2, false);
+					}
+				}
+			}
+		}
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "coin") != 0 && new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "damagetick") >= 6000) {
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (_ent != null) {
+					final int _sltid = 0;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+							if (_stk.hurt(_amount, new Random(), null)) {
+								_stk.shrink(1);
+								_stk.setDamageValue(0);
+							}
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
+						}
+					});
+				}
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (_ent != null) {
+					final int _sltid = 1;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+							if (_stk.hurt(_amount, new Random(), null)) {
+								_stk.shrink(1);
+								_stk.setDamageValue(0);
+							}
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
+						}
+					});
+				}
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (_ent != null) {
+					final int _sltid = 2;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+							if (_stk.hurt(_amount, new Random(), null)) {
+								_stk.shrink(1);
+								_stk.setDamageValue(0);
+							}
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
+						}
+					});
+				}
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (_ent != null) {
+					final int _sltid = 3;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+							if (_stk.hurt(_amount, new Random(), null)) {
+								_stk.shrink(1);
+								_stk.setDamageValue(0);
+							}
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
+						}
+					});
+				}
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (_ent != null) {
+					final int _sltid = 4;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+							if (_stk.hurt(_amount, new Random(), null)) {
+								_stk.shrink(1);
+								_stk.setDamageValue(0);
+							}
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
+						}
+					});
+				}
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (_ent != null) {
+					final int _sltid = 5;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+							if (_stk.hurt(_amount, new Random(), null)) {
+								_stk.shrink(1);
+								_stk.setDamageValue(0);
+							}
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
+						}
+					});
+				}
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("damagetick", 0);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		}
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "coin") != 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("damagetick", (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "damagetick") + 10));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
 	}

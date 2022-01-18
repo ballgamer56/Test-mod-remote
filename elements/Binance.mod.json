@@ -1,0 +1,173 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 250,
+    "height": 235,
+    "inventoryOffsetX": -37,
+    "inventoryOffsetY": 36,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 285,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 285,
+          "y": 138
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 285,
+          "y": 156
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 285,
+          "y": 174
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 285,
+          "y": 192
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 285,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "*not actual price",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "*not actual price",
+          "x": 338,
+          "y": 228
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Exchange",
+          "width": 67,
+          "height": 20,
+          "name": "Exchange",
+          "x": 262,
+          "y": 212
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Trading Pair",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Trading Pair",
+          "x": 265,
+          "y": 10
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Price",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Price",
+          "x": 281,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 210,
+          "y": 132
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Previous",
+          "width": 67,
+          "height": 20,
+          "name": "Previous",
+          "x": 95,
+          "y": 132
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trade.png",
+          "use1Xscale": false,
+          "name": "trade.png",
+          "x": 114,
+          "y": 30
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 10,
+      "oy": 22,
+      "snapOnGrid": true
+    }
+  }
+}

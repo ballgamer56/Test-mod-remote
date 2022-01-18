@@ -21,6 +21,7 @@ import net.mcreator.testmod.world.inventory.GPUAssemblerMenu;
 import net.mcreator.testmod.world.inventory.FabMenu;
 import net.mcreator.testmod.world.inventory.ETHGuiMenu;
 import net.mcreator.testmod.world.inventory.BnbguiMenu;
+import net.mcreator.testmod.world.inventory.BinanceMenu;
 import net.mcreator.testmod.world.inventory.BasicCFabMenu;
 import net.mcreator.testmod.world.inventory.AssemblerMenu;
 
@@ -42,6 +43,7 @@ public class TestModModMenus {
 	public static final MenuType<SandGuiMenu> SAND_GUI = register("sand_gui", (id, inv, extraData) -> new SandGuiMenu(id, inv, extraData));
 	public static final MenuType<KUBGuiMenu> KUB_GUI = register("kub_gui", (id, inv, extraData) -> new KUBGuiMenu(id, inv, extraData));
 	public static final MenuType<MANAGuiMenu> MANA_GUI = register("mana_gui", (id, inv, extraData) -> new MANAGuiMenu(id, inv, extraData));
+	public static final MenuType<BinanceMenu> BINANCE = register("binance", (id, inv, extraData) -> new BinanceMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

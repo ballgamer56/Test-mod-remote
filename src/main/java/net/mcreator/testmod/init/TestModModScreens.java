@@ -20,6 +20,7 @@ import net.mcreator.testmod.client.gui.GPUAssemblerScreen;
 import net.mcreator.testmod.client.gui.FabScreen;
 import net.mcreator.testmod.client.gui.ETHGuiScreen;
 import net.mcreator.testmod.client.gui.BnbguiScreen;
+import net.mcreator.testmod.client.gui.BinanceScreen;
 import net.mcreator.testmod.client.gui.BasicCFabScreen;
 import net.mcreator.testmod.client.gui.AssemblerScreen;
 
@@ -39,6 +40,7 @@ public class TestModModScreens {
 			MenuScreens.register(TestModModMenus.SAND_GUI, SandGuiScreen::new);
 			MenuScreens.register(TestModModMenus.KUB_GUI, KUBGuiScreen::new);
 			MenuScreens.register(TestModModMenus.MANA_GUI, MANAGuiScreen::new);
+			MenuScreens.register(TestModModMenus.BINANCE, BinanceScreen::new);
 		});
 	}
 }

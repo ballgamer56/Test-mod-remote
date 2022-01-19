@@ -119,7 +119,7 @@
           "height": 20,
           "name": "Doge",
           "x": 285,
-          "y": 80
+          "y": 37
         }
       },
       {
@@ -133,7 +133,7 @@
           "height": 20,
           "name": "SOL",
           "x": 285,
-          "y": 134
+          "y": 83
         }
       },
       {
@@ -147,7 +147,7 @@
           "height": 20,
           "name": "Uni",
           "x": 285,
-          "y": 107
+          "y": 60
         }
       },
       {
@@ -161,7 +161,7 @@
           "height": 20,
           "name": "BTC",
           "x": 285,
-          "y": 161
+          "y": 106
         }
       },
       {
@@ -175,7 +175,7 @@
           "height": 20,
           "name": "ETH",
           "x": 285,
-          "y": 188
+          "y": 129
         }
       },
       {
@@ -251,7 +251,7 @@
           },
           "name": "Coin selection",
           "x": 258,
-          "y": 62
+          "y": 26
         }
       },
       {
@@ -264,7 +264,7 @@
           },
           "name": "garrow0.png",
           "x": 267,
-          "y": 80
+          "y": 39
         }
       },
       {
@@ -277,7 +277,7 @@
           },
           "name": "garrow1.png",
           "x": 267,
-          "y": 107
+          "y": 61
         }
       },
       {
@@ -290,7 +290,7 @@
           },
           "name": "garrow2.png",
           "x": 267,
-          "y": 134
+          "y": 84
         }
       },
       {
@@ -303,7 +303,7 @@
           },
           "name": "garrow3.png",
           "x": 267,
-          "y": 161
+          "y": 108
         }
       },
       {
@@ -316,7 +316,61 @@
           },
           "name": "garrow4.png",
           "x": 267,
-          "y": 188
+          "y": 131
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "MANA",
+          "onClick": {
+            "name": "CSelect5"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "MANA",
+          "x": 285,
+          "y": 153
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "SAND",
+          "onClick": {
+            "name": "CSelect6"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "SAND",
+          "x": 285,
+          "y": 178
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "garrow5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Rigselect5"
+          },
+          "name": "garrow5.png",
+          "x": 267,
+          "y": 155
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "garrow6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Rigselect6"
+          },
+          "name": "garrow6.png",
+          "x": 267,
+          "y": 180
         }
       }
     ],
@@ -325,7 +379,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

@@ -12,6 +12,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cryptomod.world.inventory.RigGuiMenu;
+import net.mcreator.cryptomod.procedures.CSelect6Procedure;
+import net.mcreator.cryptomod.procedures.CSelect5Procedure;
 import net.mcreator.cryptomod.procedures.CSelect4Procedure;
 import net.mcreator.cryptomod.procedures.CSelect3Procedure;
 import net.mcreator.cryptomod.procedures.CSelect2Procedure;
@@ -85,6 +87,14 @@ public class RigGuiButtonMessage {
 		if (buttonID == 4) {
 
 			CSelect4Procedure.execute(world, x, y, z);
+		}
+		if (buttonID == 5) {
+
+			CSelect5Procedure.execute(world, x, y, z);
+		}
+		if (buttonID == 6) {
+
+			CSelect6Procedure.execute(world, x, y, z);
 		}
 	}
 

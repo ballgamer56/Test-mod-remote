@@ -2081,6 +2081,120 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rigaxe_4"
+    },
+    {
+      "name": "Rigselect5",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigselect_5",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rigselect6",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigselect_6",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CSelect5",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_select_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CSelect6",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_select_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2117,12 +2231,12 @@
       "item.test_mod.next_gen_gpu": "RTX 3080",
       "advancements.rig_advancement.descr": "Why go into the dimension and mine for coin when you can sit still and let a machine do it for you!",
       "item.crypto.bnbwallet": "Hardware Wallet (BNB)",
-      "block.test_mod.milk_plastic": "Plastic Maker",
       "block.crypto.btc_ore": "Bitcoin Ore",
+      "block.test_mod.milk_plastic": "Plastic Maker",
       "item.test_mod.better_chip": "Better Computer Chip (DIP)",
       "block.test_mod.doge_ore": "Doge Ore",
-      "block.crypto.coolant": "Cryptic Water",
       "item.crypto.better_chip": "Better Computer Chip (DIP)",
+      "block.crypto.coolant": "Cryptic Water",
       "advancements.btc_advancement.title": "One that start it all!",
       "advancements.ether.title": "Ethereum",
       "block.crypto.uniswap_ore": "Uniswap Ore",

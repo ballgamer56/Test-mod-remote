@@ -12,6 +12,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.cryptomod.world.inventory.RigGuiMenu;
+import net.mcreator.cryptomod.procedures.Rigselect6Procedure;
+import net.mcreator.cryptomod.procedures.Rigselect5Procedure;
 import net.mcreator.cryptomod.procedures.Rigselect4Procedure;
 import net.mcreator.cryptomod.procedures.Rigselect3Procedure;
 import net.mcreator.cryptomod.procedures.Rigselect2Procedure;
@@ -57,23 +59,31 @@ public class RigGuiScreen extends AbstractContainerScreen<RigGuiMenu> {
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		if (Rigselect0Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("crypto:textures/garrow0.png"));
-			this.blit(ms, this.leftPos + 178, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 19, 0, 0, 16, 16, 16, 16);
 		}
 		if (Rigselect1Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("crypto:textures/garrow1.png"));
-			this.blit(ms, this.leftPos + 178, this.topPos + 87, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 41, 0, 0, 16, 16, 16, 16);
 		}
 		if (Rigselect2Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("crypto:textures/garrow2.png"));
-			this.blit(ms, this.leftPos + 178, this.topPos + 114, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 64, 0, 0, 16, 16, 16, 16);
 		}
 		if (Rigselect3Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("crypto:textures/garrow3.png"));
-			this.blit(ms, this.leftPos + 178, this.topPos + 141, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 88, 0, 0, 16, 16, 16, 16);
 		}
 		if (Rigselect4Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("crypto:textures/garrow4.png"));
-			this.blit(ms, this.leftPos + 178, this.topPos + 168, 0, 0, 16, 16, 16, 16);
+			this.blit(ms, this.leftPos + 178, this.topPos + 111, 0, 0, 16, 16, 16, 16);
+		}
+		if (Rigselect5Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("crypto:textures/garrow5.png"));
+			this.blit(ms, this.leftPos + 178, this.topPos + 135, 0, 0, 16, 16, 16, 16);
+		}
+		if (Rigselect6Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("crypto:textures/garrow6.png"));
+			this.blit(ms, this.leftPos + 178, this.topPos + 160, 0, 0, 16, 16, 16, 16);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -98,7 +108,7 @@ public class RigGuiScreen extends AbstractContainerScreen<RigGuiMenu> {
 		this.font.draw(poseStack, "Output", 61, 69, -12829636);
 		this.font.draw(poseStack, "Graphic cards", 7, 33, -12829636);
 		this.font.draw(poseStack, "CPU", 7, 69, -12829636);
-		this.font.draw(poseStack, "Coin selection", 169, 42, -12829636);
+		this.font.draw(poseStack, "Coin selection", 169, 6, -12829636);
 	}
 
 	@Override
@@ -111,34 +121,46 @@ public class RigGuiScreen extends AbstractContainerScreen<RigGuiMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 60, 46, 20, new TextComponent("Doge"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 17, 46, 20, new TextComponent("Doge"), e -> {
 			if (true) {
 				CryptoMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(0, x, y, z));
 				RigGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 114, 40, 20, new TextComponent("SOL"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 63, 40, 20, new TextComponent("SOL"), e -> {
 			if (true) {
 				CryptoMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(1, x, y, z));
 				RigGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 87, 40, 20, new TextComponent("Uni"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 40, 40, 20, new TextComponent("Uni"), e -> {
 			if (true) {
 				CryptoMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(2, x, y, z));
 				RigGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 141, 40, 20, new TextComponent("BTC"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 86, 40, 20, new TextComponent("BTC"), e -> {
 			if (true) {
 				CryptoMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(3, x, y, z));
 				RigGuiButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 168, 40, 20, new TextComponent("ETH"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 109, 40, 20, new TextComponent("ETH"), e -> {
 			if (true) {
 				CryptoMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(4, x, y, z));
 				RigGuiButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 133, 46, 20, new TextComponent("MANA"), e -> {
+			if (true) {
+				CryptoMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(5, x, y, z));
+				RigGuiButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 196, this.topPos + 158, 46, 20, new TextComponent("SAND"), e -> {
+			if (true) {
+				CryptoMod.PACKET_HANDLER.sendToServer(new RigGuiButtonMessage(6, x, y, z));
+				RigGuiButtonMessage.handleButtonAction(entity, 6, x, y, z);
 			}
 		}));
 	}

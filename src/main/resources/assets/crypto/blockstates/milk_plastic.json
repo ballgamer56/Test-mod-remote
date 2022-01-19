@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "crypto:block/milk_plastic"
+    },
+    "facing=east": {
+      "model": "crypto:block/milk_plastic",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "crypto:block/milk_plastic",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "crypto:block/milk_plastic",
+      "y": 270
+    }
+  }
+}

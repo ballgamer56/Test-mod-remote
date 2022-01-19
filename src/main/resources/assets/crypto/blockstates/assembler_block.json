@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "crypto:block/assembler_block"
+    },
+    "facing=east": {
+      "model": "crypto:block/assembler_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "crypto:block/assembler_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "crypto:block/assembler_block",
+      "y": 270
+    }
+  }
+}

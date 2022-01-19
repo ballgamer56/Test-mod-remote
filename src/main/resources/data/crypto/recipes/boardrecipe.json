@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "crypto:cchip_4"
+    },
+    "1": {
+      "item": "crypto:cchip_4"
+    },
+    "2": {
+      "item": "crypto:cchip_4"
+    },
+    "3": {
+      "item": "minecraft:iron_nugget"
+    },
+    "4": {
+      "item": "minecraft:redstone"
+    },
+    "5": {
+      "item": "minecraft:iron_nugget"
+    },
+    "6": {
+      "item": "crypto:cchip_4"
+    },
+    "7": {
+      "item": "crypto:cchip_4"
+    },
+    "8": {
+      "item": "crypto:cchip_4"
+    }
+  },
+  "result": {
+    "item": "crypto:board",
+    "count": 1
+  }
+}

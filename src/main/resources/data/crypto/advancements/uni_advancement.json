@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "crypto:uniswapcoin"
+    },
+    "title": {
+      "translate": "advancements.uni_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.uni_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "uni_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "crypto:uniswapcoin"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "crypto:et_hwall"
+    ]
+  },
+  "parent": "crypto:crypto_start"
+}

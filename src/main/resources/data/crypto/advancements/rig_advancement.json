@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "crypto:graphic_pick_1"
+    },
+    "title": {
+      "translate": "advancements.rig_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.rig_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rig_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "crypto:mining_rig"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "crypto:crypto_start"
+}

@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "crypto:silicon"
+    },
+    "title": {
+      "translate": "advancements.silicon_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.silicon_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "silicon_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "crypto:silicon"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "crypto:chip_fab_recipe",
+      "crypto:chip_ass_rec",
+      "crypto:fancraft",
+      "crypto:cpucraft",
+      "crypto:plastic_milk_recipe",
+      "crypto:boardrecipe"
+    ]
+  },
+  "parent": "crypto:crypto_start"
+}

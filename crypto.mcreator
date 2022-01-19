@@ -1,0 +1,2274 @@
+{
+  "mod_elements": [
+    {
+      "name": "CryptStone",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypt_stone"
+    },
+    {
+      "name": "CrypticSphere",
+      "type": "biome",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryptic_sphere"
+    },
+    {
+      "name": "Coolant",
+      "type": "fluid",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolant",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "CryptoWorld",
+      "type": "dimension",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_world",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Dogecoin",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dogecoin"
+    },
+    {
+      "name": "DogeOre",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doge_ore"
+    },
+    {
+      "name": "CryptoMiningPickaxe",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_mining_pickaxe"
+    },
+    {
+      "name": "HardwareWallet",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hardware_wallet"
+    },
+    {
+      "name": "Wallet",
+      "type": "gui",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallet"
+    },
+    {
+      "name": "CryptoStart",
+      "type": "achievement",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_start"
+    },
+    {
+      "name": "PickLv2",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pick_lv_2"
+    },
+    {
+      "name": "CryptoWorldPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_world_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ETHOre",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eth_ore"
+    },
+    {
+      "name": "Ethereum",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ethereum"
+    },
+    {
+      "name": "Ethwallet",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ethwallet"
+    },
+    {
+      "name": "ETHGui",
+      "type": "gui",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eth_gui"
+    },
+    {
+      "name": "ChipFab",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip_fab"
+    },
+    {
+      "name": "Fab",
+      "type": "gui",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fab"
+    },
+    {
+      "name": "Silicon",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon"
+    },
+    {
+      "name": "FabChip",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fab_chip"
+    },
+    {
+      "name": "ChipFabUpdateTick",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip_fab_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChipFabBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip_fab_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress0",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress1",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress2",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress3",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress4",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_4",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Progress5",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_5",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Basicchip",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basicchip"
+    },
+    {
+      "name": "Basiccchipfab",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basiccchipfab"
+    },
+    {
+      "name": "BasicCFab",
+      "type": "gui",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_c_fab"
+    },
+    {
+      "name": "Chipassem",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chipassem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BetterChip",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_chip"
+    },
+    {
+      "name": "CryptoWorldPortalFrame",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypto_world_portal_frame"
+    },
+    {
+      "name": "PortalFrameRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_frame_recipe"
+    },
+    {
+      "name": "Cmp1recipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmp_1recipe"
+    },
+    {
+      "name": "Cmp2",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmp_2"
+    },
+    {
+      "name": "DWallet",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_wallet"
+    },
+    {
+      "name": "ETHwall",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "et_hwall"
+    },
+    {
+      "name": "Goldchip",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldchip"
+    },
+    {
+      "name": "Cchip3",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cchip_3"
+    },
+    {
+      "name": "Cchip4",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cchip_4"
+    },
+    {
+      "name": "Picklv3",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "picklv_3"
+    },
+    {
+      "name": "Cmp",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmp"
+    },
+    {
+      "name": "BTCOre",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "btc_ore"
+    },
+    {
+      "name": "BTC",
+      "type": "item",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "btc"
+    },
+    {
+      "name": "GraphicPick1",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graphic_pick_1"
+    },
+    {
+      "name": "Plastic",
+      "type": "item",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic"
+    },
+    {
+      "name": "GPUAssembler",
+      "type": "gui",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasticmaker"
+    },
+    {
+      "name": "MilkPlastic",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_plastic"
+    },
+    {
+      "name": "MilkPlasticUpdateTick",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_plastic_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlasticProgress0",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_progress_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlasticProgress1",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_progress_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Solanacoin",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solanacoin"
+    },
+    {
+      "name": "Uniswapcoin",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uniswapcoin"
+    },
+    {
+      "name": "Fancraft",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fancraft"
+    },
+    {
+      "name": "Fan",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fan"
+    },
+    {
+      "name": "Cpu",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cpu"
+    },
+    {
+      "name": "UniswapOre",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uniswap_ore"
+    },
+    {
+      "name": "SolanaOre",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solana_ore"
+    },
+    {
+      "name": "Cpucraft",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cpucraft"
+    },
+    {
+      "name": "Assembler",
+      "type": "gui",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assembler"
+    },
+    {
+      "name": "AssemblerBlock",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assembler_block"
+    },
+    {
+      "name": "AssemblerProcedure",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assembler_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BasicGPU",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_gpu"
+    },
+    {
+      "name": "Rigaxe",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigaxe"
+    },
+    {
+      "name": "Rigaxe2",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigaxe_2"
+    },
+    {
+      "name": "BetterGPU",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_gpu"
+    },
+    {
+      "name": "Rig2",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rig_2"
+    },
+    {
+      "name": "Rigselect0",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigselect_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rigselect1",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigselect_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rigselect2",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigselect_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rigselect3",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigselect_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rigselect4",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigselect_4",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RigGui",
+      "type": "gui",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rig_gui"
+    },
+    {
+      "name": "CSelect0",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_select_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CSelect1",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_select_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CSelect2",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_select_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CSelect3",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_select_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CSelect4",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_select_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MiningRig",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_rig"
+    },
+    {
+      "name": "MiningRigBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_rig_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MiningRigUpdateTick",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_rig_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bnbcoin",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnbcoin"
+    },
+    {
+      "name": "Kubcoin",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kubcoin"
+    },
+    {
+      "name": "Sandcoin",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandcoin"
+    },
+    {
+      "name": "Manacoin",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manacoin"
+    },
+    {
+      "name": "Usdtcoin",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdtcoin"
+    },
+    {
+      "name": "AdvanceGPU",
+      "type": "item",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advance_gpu"
+    },
+    {
+      "name": "NextGenGPU",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next_gen_gpu"
+    },
+    {
+      "name": "Board",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "board"
+    },
+    {
+      "name": "Boardrecipe",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boardrecipe"
+    },
+    {
+      "name": "RigRecipe",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rig_recipe"
+    },
+    {
+      "name": "PlasticMilkRecipe",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_milk_recipe"
+    },
+    {
+      "name": "SiliconRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon_recipe"
+    },
+    {
+      "name": "ChipFabRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip_fab_recipe"
+    },
+    {
+      "name": "ChipAssRec",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip_ass_rec"
+    },
+    {
+      "name": "CryptStoneRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crypt_stone_recipe"
+    },
+    {
+      "name": "AssemblerRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assembler_recipe"
+    },
+    {
+      "name": "USDT9",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_9"
+    },
+    {
+      "name": "USDT81",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_81"
+    },
+    {
+      "name": "USDT729",
+      "type": "item",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_729"
+    },
+    {
+      "name": "USDT6561",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_6561"
+    },
+    {
+      "name": "Usdt9Recipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_9_recipe"
+    },
+    {
+      "name": "Usdt81Recipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_81_recipe"
+    },
+    {
+      "name": "Usdt729Recipe",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_729_recipe"
+    },
+    {
+      "name": "Usdt6561Recipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_6561_recipe"
+    },
+    {
+      "name": "RUsdt729",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "r_usdt_729"
+    },
+    {
+      "name": "RUsdt81",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "r_usdt_81"
+    },
+    {
+      "name": "RUsdt9",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "r_usdt_9"
+    },
+    {
+      "name": "USDTRecipr",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usdt_recipr"
+    },
+    {
+      "name": "Bnbwallet",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnbwallet"
+    },
+    {
+      "name": "Bnbgui",
+      "type": "gui",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnbgui"
+    },
+    {
+      "name": "Bnbwall",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnbwall"
+    },
+    {
+      "name": "VirtualDollar",
+      "type": "achievement",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virtual_dollar"
+    },
+    {
+      "name": "SaWadDeeKub",
+      "type": "achievement",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sa_wad_dee_kub"
+    },
+    {
+      "name": "BTCAdvancement",
+      "type": "achievement",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "btc_advancement"
+    },
+    {
+      "name": "MemeCoin",
+      "type": "achievement",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meme_coin"
+    },
+    {
+      "name": "SiliconAdvancement",
+      "type": "achievement",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon_advancement"
+    },
+    {
+      "name": "Ether",
+      "type": "achievement",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ether"
+    },
+    {
+      "name": "SandGui",
+      "type": "gui",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_gui"
+    },
+    {
+      "name": "SANDWall",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_wall"
+    },
+    {
+      "name": "KUBWall",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kub_wall"
+    },
+    {
+      "name": "KUBGui",
+      "type": "gui",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kub_gui"
+    },
+    {
+      "name": "SandWallR",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_wall_r"
+    },
+    {
+      "name": "KUBWallR",
+      "type": "recipe",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kub_wall_r"
+    },
+    {
+      "name": "MANAWallet",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wallet"
+    },
+    {
+      "name": "MANAGui",
+      "type": "gui",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_gui"
+    },
+    {
+      "name": "MANAWall",
+      "type": "recipe",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wall"
+    },
+    {
+      "name": "Binance",
+      "type": "gui",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binance"
+    },
+    {
+      "name": "Pair0",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pair1",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pair2",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pair3",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pair4",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_4",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pair5",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_5",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pair6",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_6",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pair7",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_7",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pair8",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pair_8",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Exchange",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exchange",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExNext",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ex_next",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExPrev",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ex_prev",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExPrevButt",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ex_prev_butt",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExNextButt",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ex_next_butt",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ex",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ex"
+    },
+    {
+      "name": "ExBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ex_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SandAdvancement",
+      "type": "achievement",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_advancement"
+    },
+    {
+      "name": "RigAdvancement",
+      "type": "achievement",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rig_advancement"
+    },
+    {
+      "name": "BasicGPUAdvancment",
+      "type": "achievement",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_gpu_advancment"
+    },
+    {
+      "name": "BetterGPUAdvancement",
+      "type": "achievement",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_gpu_advancement"
+    },
+    {
+      "name": "AdvGPUAdvancement",
+      "type": "achievement",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_gpu_advancement"
+    },
+    {
+      "name": "NGGPUAdvancement",
+      "type": "achievement",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nggpu_advancement"
+    },
+    {
+      "name": "UniAdvancement",
+      "type": "achievement",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uni_advancement"
+    },
+    {
+      "name": "Rigaxe3",
+      "type": "tool",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigaxe_3"
+    },
+    {
+      "name": "Rigaxe4",
+      "type": "tool",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigaxe_4"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "dogeprice",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.crypto.board": "Computer Motherboard",
+      "block.crypto.basiccchipfab": "Chip Assembler",
+      "advancements.basic_gpu_advancment.title": "The ol\u0027 reliable",
+      "item.test_mod.usdt_9": "USDT x9",
+      "item.test_mod.ethwallet": "Hardware Wallet (Ethereum chain)",
+      "item.crypto.plastic": "Plastic",
+      "item.test_mod.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
+      "item.crypto.manacoin": "Decentraland",
+      "item.test_mod.mana_wallet": "Hardware Wallet (MANA)",
+      "block.crypto.milk_plastic": "Plastic Maker",
+      "advancements.sa_wad_dee_kub.title": "Sa Wad Dee Kub",
+      "advancements.meme_coin.title": "Meme Coin",
+      "item.test_mod.btc": "Bitcoin",
+      "item.crypto.sand_wall": "Hardware Wallet (SAND)",
+      "block.test_mod.assembler_block": "Computer Component Assembler",
+      "item.test_mod.silicon": "Silicon",
+      "item.test_mod.basicchip": "Basic Computer Chip (DIP)",
+      "item.test_mod.sand_wall": "Hardware Wallet (SAND)",
+      "item.test_mod.pick_lv_2": "Crypto Mining Pickaxe Level 2",
+      "fluid.crypto.coolant": "Cryptic Water",
+      "item.test_mod.next_gen_gpu": "RTX 3080",
+      "advancements.rig_advancement.descr": "Why go into the dimension and mine for coin when you can sit still and let a machine do it for you!",
+      "item.crypto.bnbwallet": "Hardware Wallet (BNB)",
+      "block.test_mod.milk_plastic": "Plastic Maker",
+      "block.crypto.btc_ore": "Bitcoin Ore",
+      "item.test_mod.better_chip": "Better Computer Chip (DIP)",
+      "block.test_mod.doge_ore": "Doge Ore",
+      "block.crypto.coolant": "Cryptic Water",
+      "item.crypto.better_chip": "Better Computer Chip (DIP)",
+      "advancements.btc_advancement.title": "One that start it all!",
+      "advancements.ether.title": "Ethereum",
+      "block.crypto.uniswap_ore": "Uniswap Ore",
+      "block.test_mod.coolant": "Cryptic Water",
+      "item.test_mod.manacoin": "Decentraland",
+      "block.crypto.solana_ore": "Solana Ore",
+      "item.test_mod.fab_chip": "Fabricated Chip Die",
+      "advancements.adv_gpu_advancement.title": "The hype though...",
+      "item.crypto.fan": "Fan",
+      "block.crypto.crypto_world_portal_frame": "Crypto World Portal Frame",
+      "advancements.better_gpu_advancement.descr": "Back in the day, this was the best... Now it\u0027s obsolete",
+      "item.crypto.btc": "Bitcoin",
+      "item.test_mod.kubcoin": "Kubcoin",
+      "advancements.nggpu_advancement.descr": "\"I got this for a high price, that\u0027s why I\u0027m selling it to you at this price\" Yeah... right...",
+      "advancements.crypto_start.title": "Virtual Miner",
+      "item.test_mod.crypto_mining_pickaxe": "Crypto Mining Pickaxe Level 1",
+      "item.crypto.crypto_world": "Gold Plated Computer Chip",
+      "biome.test_mod.cryptic_sphere": "Cryptic Sphere",
+      "advancements.better_gpu_advancement.title": "An Upgrade",
+      "item.test_mod.usdtcoin": "Tether",
+      "item.crypto.next_gen_gpu": "RTX 3080",
+      "item.test_mod.cchip_3": "Basic Computer Chip (TSOP)",
+      "advancements.sand_advancement.title": "The Sandbox",
+      "item.test_mod.cchip_4": "Better Computer Chip (TSOP)",
+      "item.crypto.ethwallet": "Hardware Wallet (Ethereum chain)",
+      "item.crypto.rigaxe_3": "Crypto Mining Drill Level 1",
+      "item.crypto.rigaxe_4": "Crypto Mining Drill Level 1",
+      "item.crypto.kubcoin": "Kubcoin",
+      "item.crypto.rigaxe_2": "Crypto Mining Rigaxe Level 2",
+      "item.crypto.usdt_729": "USDT x729",
+      "item.crypto.basic_gpu": "Geforce 750Ti",
+      "item.test_mod.uniswapcoin": "Uniswapcoin",
+      "fluid.test_mod.coolant": "Cryptic Water",
+      "block.crypto.assembler_block": "Computer Component Assembler",
+      "item.crypto.dogecoin": "Dogecoin",
+      "advancements.btc_advancement.descr": "Obtain Bitcoin",
+      "item.crypto.fab_chip": "Fabricated Chip Die",
+      "item.test_mod.sandcoin": "The Sandbox",
+      "advancements.adv_gpu_advancement.descr": "Huge leap of Graphic technology, too bad it\u0027s hard to find and buy one",
+      "block.crypto.mining_rig": "Mining Rig",
+      "item.crypto.usdt_81": "USDT x81",
+      "item.test_mod.plastic": "Plastic",
+      "advancements.meme_coin.descr": "It starts off as a meme, How did this thing got value?",
+      "item.test_mod.crypto_world": "Gold Plated Computer Chip",
+      "item.test_mod.picklv_3": "Crypto Mining Pickaxe Level 3",
+      "block.crypto.crypt_stone": "Crypt Stone",
+      "item.test_mod.kub_wall": "Hardware Wallet (KUB)",
+      "item.crypto.graphic_pick_1": "Crypto Mining Rigaxe Level 1",
+      "item.crypto.usdt_6561": "USDT x6561",
+      "advancements.sa_wad_dee_kub.descr": "KUB to the moon!",
+      "item.crypto.silicon": "Silicon",
+      "item.test_mod.better_gpu": "GTX 1080Ti",
+      "block.test_mod.uniswap_ore": "Uniswap Ore",
+      "block.test_mod.eth_ore": "Ether Ore",
+      "item.test_mod.dogecoin": "Dogecoin",
+      "advancements.basic_gpu_advancment.descr": "Trust me, this thing can run any game",
+      "item.test_mod.usdt_81": "USDT x81",
+      "item.crypto.uniswapcoin": "Uniswapcoin",
+      "item.crypto.kub_wall": "Hardware Wallet (KUB)",
+      "block.test_mod.crypto_world_portal_frame": "Crypto World Portal Frame",
+      "item.crypto.advance_gpu": "RTX 2060",
+      "item.test_mod.usdt_6561": "USDT x6561",
+      "advancements.virtual_dollar.title": "Virtual Dollar",
+      "item.crypto.hardware_wallet": "Hardware Wallet (Dogecoin)",
+      "item.test_mod.cpu": "Regular Socketed CPU",
+      "item.crypto.cpu": "Regular Socketed CPU",
+      "item.crypto.usdtcoin": "Tether",
+      "item.crypto.bnbcoin": "BNB",
+      "item.test_mod.solanacoin": "Solana",
+      "item.crypto.ethereum": "Ethereum",
+      "block.test_mod.chip_fab": "Chip Fabricator",
+      "item.test_mod.basic_gpu": "Geforce 750Ti",
+      "item.crypto.sandcoin": "The Sandbox",
+      "item.test_mod.hardware_wallet": "Hardware Wallet (Dogecoin)",
+      "block.crypto.chip_fab": "Chip Fabricator",
+      "block.test_mod.mining_rig": "Mining Rig",
+      "item.crypto.picklv_3": "Crypto Mining Pickaxe Level 3",
+      "item.test_mod.usdt_729": "USDT x729",
+      "block.crypto.ex": "Exchanger",
+      "item.crypto.solanacoin": "Solana",
+      "item.crypto.basicchip": "Basic Computer Chip (DIP)",
+      "item.test_mod.rigaxe_2": "Crypto Mining Rigaxe Level 2",
+      "item.test_mod.coolant_bucket": "Cryptic Water Bucket",
+      "block.test_mod.ex": "Exchanger",
+      "advancements.sand_advancement.descr": "Despite thet name, it\u0027s not made out of sand",
+      "item.crypto.cchip_4": "Better Computer Chip (TSOP)",
+      "item.test_mod.bnbwallet": "Hardware Wallet (BNB)",
+      "advancements.nggpu_advancement.title": "The absolute",
+      "item.crypto.usdt_9": "USDT x9",
+      "item.crypto.cchip_3": "Basic Computer Chip (TSOP)",
+      "advancements.silicon_advancement.title": "Chip recipe!",
+      "item.crypto.pick_lv_2": "Crypto Mining Pickaxe Level 2",
+      "item.test_mod.bnbcoin": "BNB",
+      "advancements.crypto_start.descr": "Entered the world of crypto mining",
+      "biome.crypto.cryptic_sphere": "Cryptic Sphere",
+      "item.test_mod.fan": "Fan",
+      "block.test_mod.crypt_stone": "Crypt Stone",
+      "advancements.uni_advancement.title": "A Unicorn!",
+      "item.test_mod.rigaxe_3": "Crypto Mining Drill Level 1",
+      "item.test_mod.rigaxe_4": "Crypto Mining Drill Level 1",
+      "item.crypto.coolant_bucket": "Cryptic Water Bucket",
+      "advancements.uni_advancement.descr": "Wait no, nevermind. it\u0027s just another coin",
+      "block.crypto.doge_ore": "Doge Ore",
+      "block.test_mod.btc_ore": "Bitcoin Ore",
+      "item.test_mod.advance_gpu": "RTX 2060",
+      "block.test_mod.basiccchipfab": "Chip Assembler",
+      "advancements.silicon_advancement.descr": "No... not that chip",
+      "item.crypto.better_gpu": "GTX 1080Ti",
+      "advancements.virtual_dollar.descr": "The US Dollar, On BLockchain!",
+      "advancements.ether.descr": "Time to think about smart contract!",
+      "block.test_mod.solana_ore": "Solana Ore",
+      "advancements.rig_advancement.title": "Virtually Mining... Virtually!",
+      "block.crypto.eth_ore": "Ether Ore",
+      "item.crypto.crypto_mining_pickaxe": "Crypto Mining Pickaxe Level 1",
+      "item.test_mod.ethereum": "Ethereum",
+      "item.test_mod.board": "Computer Motherboard",
+      "item.crypto.mana_wallet": "Hardware Wallet (MANA)"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Procedure",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "crypto",
+    "modName": "Crypto Mod",
+    "version": "1.0.0",
+    "author": "Ball56, Holilope, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "btc",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.cryptomod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100353117
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "crypto:block/chip_fab"
+    },
+    "facing=east": {
+      "model": "crypto:block/chip_fab",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "crypto:block/chip_fab",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "crypto:block/chip_fab",
+      "y": 270
+    }
+  }
+}

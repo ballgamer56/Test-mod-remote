@@ -3,14 +3,15 @@ loaderVersion="[37,)"
 license="Academic Free License v3.0"
 
 [[mods]]
-modId="test_mod"
+modId="crypto"
 version="1.0.0"
-displayName="Test Mod"
+displayName="Crypto Mod"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="User, MCreator"
+logoFile="logo.png"
+authors="Ball56, Holilope, MCreator"
 
-[[dependencies.test_mod]]
+[[dependencies.crypto]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.17.1]"

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "crypto:crypto_world"
+    },
+    "title": {
+      "translate": "advancements.crypto_start.title"
+    },
+    "description": {
+      "translate": "advancements.crypto_start.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crypto_start": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "crypto:cryptic_sphere"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "crypto:cmp_1recipe",
+      "crypto:cmp_2",
+      "crypto:cmp",
+      "crypto:rig_recipe",
+      "crypto:plastic_milk_recipe",
+      "crypto:crypt_stone_recipe"
+    ]
+  },
+  "parent": "minecraft:story/mine_stone"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "crypto:blocks/solana_ore",
+    "up": "crypto:blocks/solana_ore",
+    "north": "crypto:blocks/solana_ore",
+    "east": "crypto:blocks/solana_ore",
+    "south": "crypto:blocks/solana_ore",
+    "west": "crypto:blocks/solana_ore",
+    "particle": "crypto:blocks/solana_ore"
+  }
+}

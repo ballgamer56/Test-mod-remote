@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "crypto:usdt_729"
+    }
+  ],
+  "result": {
+    "item": "crypto:usdt_81",
+    "count": 9
+  }
+}

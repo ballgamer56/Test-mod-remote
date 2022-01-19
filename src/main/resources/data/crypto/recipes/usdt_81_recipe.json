@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "crypto:usdt_9"
+    },
+    "1": {
+      "item": "crypto:usdt_9"
+    },
+    "2": {
+      "item": "crypto:usdt_9"
+    },
+    "3": {
+      "item": "crypto:usdt_9"
+    },
+    "4": {
+      "item": "crypto:usdt_9"
+    },
+    "5": {
+      "item": "crypto:usdt_9"
+    },
+    "6": {
+      "item": "crypto:usdt_9"
+    },
+    "7": {
+      "item": "crypto:usdt_9"
+    },
+    "8": {
+      "item": "crypto:usdt_9"
+    }
+  },
+  "result": {
+    "item": "crypto:usdt_81",
+    "count": 1
+  }
+}

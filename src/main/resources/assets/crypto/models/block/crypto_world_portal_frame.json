@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "crypto:blocks/cryptportal",
+    "up": "crypto:blocks/cryptportal",
+    "north": "crypto:blocks/cryptportal",
+    "east": "crypto:blocks/cryptportal",
+    "south": "crypto:blocks/cryptportal",
+    "west": "crypto:blocks/cryptportal",
+    "particle": "crypto:blocks/cryptportal"
+  }
+}

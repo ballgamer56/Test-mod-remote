@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "crypto:better_chip"
+    },
+    "1": {
+      "item": "crypto:better_chip"
+    },
+    "2": {
+      "item": "crypto:better_chip"
+    },
+    "4": {
+      "item": "crypto:fab_chip"
+    },
+    "7": {
+      "item": "crypto:basicchip"
+    }
+  },
+  "result": {
+    "item": "crypto:pick_lv_2",
+    "count": 1
+  }
+}

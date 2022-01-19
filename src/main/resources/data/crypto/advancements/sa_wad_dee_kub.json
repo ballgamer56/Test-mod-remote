@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "crypto:kubcoin"
+    },
+    "title": {
+      "translate": "advancements.sa_wad_dee_kub.title"
+    },
+    "description": {
+      "translate": "advancements.sa_wad_dee_kub.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sa_wad_dee_kub": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "crypto:kubcoin"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "crypto:kub_wall_r"
+    ]
+  },
+  "parent": "crypto:crypto_start"
+}

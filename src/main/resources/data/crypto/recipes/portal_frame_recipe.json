@@ -1,0 +1,42 @@
+{
+  "group": "cryptoworld",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "crypto:better_chip"
+    },
+    "1": {
+      "item": "minecraft:stone"
+    },
+    "2": {
+      "item": "crypto:better_chip"
+    },
+    "3": {
+      "item": "crypto:fab_chip"
+    },
+    "4": {
+      "item": "crypto:basicchip"
+    },
+    "5": {
+      "item": "crypto:fab_chip"
+    },
+    "6": {
+      "item": "crypto:better_chip"
+    },
+    "7": {
+      "item": "minecraft:stone"
+    },
+    "8": {
+      "item": "crypto:better_chip"
+    }
+  },
+  "result": {
+    "item": "crypto:crypto_world_portal_frame",
+    "count": 1
+  }
+}

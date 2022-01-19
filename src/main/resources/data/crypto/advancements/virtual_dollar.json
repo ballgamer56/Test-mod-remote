@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "crypto:usdtcoin"
+    },
+    "title": {
+      "translate": "advancements.virtual_dollar.title"
+    },
+    "description": {
+      "translate": "advancements.virtual_dollar.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "virtual_dollar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "crypto:usdtcoin"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "crypto:usdt_9_recipe",
+      "crypto:usdt_81_recipe",
+      "crypto:usdt_729_recipe",
+      "crypto:usdt_6561_recipe",
+      "crypto:r_usdt_729",
+      "crypto:r_usdt_81",
+      "crypto:r_usdt_81",
+      "crypto:r_usdt_9",
+      "crypto:usdt_recipr",
+      "crypto:et_hwall"
+    ]
+  },
+  "parent": "crypto:crypto_start"
+}

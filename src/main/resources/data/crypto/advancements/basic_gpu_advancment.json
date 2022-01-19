@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "crypto:basic_gpu"
+    },
+    "title": {
+      "translate": "advancements.basic_gpu_advancment.title"
+    },
+    "description": {
+      "translate": "advancements.basic_gpu_advancment.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "basic_gpu_advancment": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "crypto:basic_gpu"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "crypto:rigaxe",
+      "crypto:rig_recipe"
+    ]
+  },
+  "parent": "crypto:crypto_start"
+}

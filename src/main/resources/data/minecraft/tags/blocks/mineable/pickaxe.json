@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "test_mod:chip_fab",
-    "test_mod:basiccchipfab",
-    "test_mod:milk_plastic",
-    "test_mod:assembler_block"
+    "crypto:chip_fab",
+    "crypto:basiccchipfab",
+    "crypto:milk_plastic",
+    "crypto:assembler_block"
   ]
 }

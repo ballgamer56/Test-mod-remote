@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "crypto:block/basiccchipfab"
+    },
+    "facing=east": {
+      "model": "crypto:block/basiccchipfab",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "crypto:block/basiccchipfab",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "crypto:block/basiccchipfab",
+      "y": 270
+    }
+  }
+}

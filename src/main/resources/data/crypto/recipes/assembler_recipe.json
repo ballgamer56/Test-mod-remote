@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:crafting_table"
+    },
+    "1": {
+      "item": "minecraft:crafting_table"
+    },
+    "2": {
+      "item": "minecraft:crafting_table"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "4": {
+      "item": "crypto:better_chip"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    },
+    "6": {
+      "item": "minecraft:crafting_table"
+    },
+    "7": {
+      "item": "minecraft:crafting_table"
+    },
+    "8": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "item": "crypto:assembler_block",
+    "count": 1
+  }
+}

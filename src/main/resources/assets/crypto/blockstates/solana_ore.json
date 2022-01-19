@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "crypto:block/solana_ore"
+    }
+  }
+}

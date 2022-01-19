@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "crypto:blocks/stone",
+    "up": "crypto:blocks/stone",
+    "north": "crypto:blocks/stone",
+    "east": "crypto:blocks/stone",
+    "south": "crypto:blocks/stone",
+    "west": "crypto:blocks/stone",
+    "particle": "crypto:blocks/stone"
+  }
+}

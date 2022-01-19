@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "crypto:plastic"
+    },
+    "3": {
+      "item": "crypto:plastic"
+    },
+    "4": {
+      "item": "minecraft:iron_nugget"
+    },
+    "5": {
+      "item": "crypto:plastic"
+    },
+    "7": {
+      "item": "crypto:plastic"
+    }
+  },
+  "result": {
+    "item": "crypto:fan",
+    "count": 2
+  }
+}

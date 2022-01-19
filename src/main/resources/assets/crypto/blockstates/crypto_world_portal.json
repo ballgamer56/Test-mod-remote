@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "crypto:block/crypto_world_portal_ew"
+    },
+    "axis=x": {
+      "model": "crypto:block/crypto_world_portal_ns"
+    }
+  }
+}

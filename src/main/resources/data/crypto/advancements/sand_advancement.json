@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "crypto:sandcoin"
+    },
+    "title": {
+      "translate": "advancements.sand_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.sand_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sand_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "crypto:sandcoin"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "crypto:sand_wall_r"
+    ]
+  },
+  "parent": "crypto:crypto_start"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "crypto:blocks/uniswap_ore",
+    "up": "crypto:blocks/uniswap_ore",
+    "north": "crypto:blocks/uniswap_ore",
+    "east": "crypto:blocks/uniswap_ore",
+    "south": "crypto:blocks/uniswap_ore",
+    "west": "crypto:blocks/uniswap_ore",
+    "particle": "crypto:blocks/uniswap_ore"
+  }
+}

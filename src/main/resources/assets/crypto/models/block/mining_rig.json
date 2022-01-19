@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "crypto:blocks/chipfabside",
+    "up": "crypto:blocks/rigtop",
+    "north": "crypto:blocks/chipfabside",
+    "east": "crypto:blocks/chipfabside",
+    "south": "crypto:blocks/chipfabside",
+    "west": "crypto:blocks/chipfabside",
+    "particle": "crypto:blocks/chipfabside"
+  }
+}
